@@ -3,7 +3,7 @@ baseurl: "" # the subpath of your site, e.g. /blog/
 languages: [en, fr]
 
 # url: "http://philbaccara.github.io" # the base hostname & protocol for your site
-url: "http://0.0.0.0:4000"
+url: "https://philbaccara.github.io"
 
 
 # Exclusion list from the generated _site
