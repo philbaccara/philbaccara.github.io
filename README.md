@@ -4,7 +4,7 @@ My personal webpage and blog.
 
 # ToDo
 
-- ~~remove bootstrap dependencies~~
+- remove bootstrap dependencies
 - harmonize all px units to em and rem
 - refactor and harmonize SCSS code
 - build a pack and publish as a free Jekyll template

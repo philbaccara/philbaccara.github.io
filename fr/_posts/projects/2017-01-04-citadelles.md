@@ -7,7 +7,7 @@ permalink: /fr/projects/citadelles.html
 name: "Citadelles"
 img:
   thumbnail: 'citadelles-thumbnail.jpg'
-  banner: 'citadelles-banner.png'
+  banner: 'citadelles-banner.jpg'
 about: "Un fanmade pour smartphone de l'excellent jeu de cartes de Bruno Faidutti."
 release: "Sortie prévue au 2<sup>ème</sup> trimestre 2017"
 stack: ["React Native"]

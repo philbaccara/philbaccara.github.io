@@ -137,6 +137,10 @@
       padding-left: 4em;
       list-style-type: square;
     }
+
+    @media (max-width: $small) {
+      padding: 2em 20px;
+    }
   }
 }
 
@@ -241,6 +245,10 @@
         font-size: .8em;
       }
     }
+  }
+
+  @media (max-width: $small) {
+    margin: 40px 0 0 0;
   }
 }
 
