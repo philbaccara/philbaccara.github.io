@@ -2,7 +2,7 @@
 baseurl: "" # the subpath of your site, e.g. /blog/
 languages: [en, fr]
 
-# url: "http://philbaccara.github.io" # the base hostname & protocol for your site
+# Base hostname & protocol of the website
 url: "https://philbaccara.github.io"
 
 

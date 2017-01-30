@@ -1,19 +1,18 @@
 # {Philippe Baccara}
 
-My personal webpage and blog
+My personal webpage and blog.
 
 # ToDo
 
-- remove bootstrap dependencies
-- harmonize all px units to em an rem
+- ~~remove bootstrap dependencies~~
+- harmonize all px units to em and rem
 - refactor and harmonize SCSS code
 - build a pack and publish as a free Jekyll template
-- find a better way to switch between the website languages
 
 # Issues
 
 _Found a bug? Please create an issue :_
-https://github.com/philbaccara/
+https://github.com/philbaccara/philbaccara.github.io/issues/new
 
 ## Credits
 
