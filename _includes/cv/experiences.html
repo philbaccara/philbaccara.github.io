@@ -1,0 +1,34 @@
+
+<!-- Experiences Start -->
+
+<article>
+
+  {% include cv/experience-git-graph.html %}
+
+  <h2 class="experiences__title">{{ site.data.cv.content.experiences.title[page.lang] }}</h2>
+  <ul class="experiences">
+    {% for experience in site.data.cv.experiences %}
+      <li class="experience {{ experience.career }}">
+        <div class="experience__year">{{ experience.year }}</div>
+        <div class="content">
+          <div class="experience__head">
+            {{ experience.society }}
+            <div class="experience__address">
+              <div class="experience__country">
+                {{ experience.country[page.lang] }}
+              </div>
+              <div class="experience__city">
+                {{ experience.city }}
+              </div>
+            </div>
+          </div>
+          <div class="experience__body">
+            {{ experience.desc[page.lang] | markdownify }}
+          </div>
+        </div>
+      </li>
+    {% endfor %}
+  </ul>
+</article>
+
+<!-- Experiences End -->

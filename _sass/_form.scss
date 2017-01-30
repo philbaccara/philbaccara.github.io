@@ -1,0 +1,174 @@
+form {
+
+  label {
+    z-index: 1;
+    cursor: text;
+    pointer-events: none;
+    line-height: 22px;
+    margin: 0;
+    color: #666;
+    -webkit-user-select: none;
+    -webkit-transform: scale(1) translate3d(0, 0, 0);
+            transform: scale(1) translate3d(0, 0, 0);
+    -webkit-transform-origin: left top 0;
+            transform-origin: left top 0;
+    -webkit-transition: all 450ms cubic-bezier(.23, 1, .32, 1) 0ms;
+            transition: all 450ms cubic-bezier(.23, 1, .32, 1) 0ms;
+    & > .required {
+      font-weight: bold;
+      color: $error-color;
+    }
+  }
+
+  .hint {
+    position: relative;
+    margin-top: 4px;
+    font-size: 12px;
+    font-style: italic;
+    line-height: 12px;
+    text-align: right;
+    color: #888;
+    -webkit-transition: all 450ms cubic-bezier(.23, 1, .32, 1) 0ms;
+            transition: all 450ms cubic-bezier(.23, 1, .32, 1) 0ms;
+    a {
+      color: inherit;
+      &.animated:after {
+        background-color: #888;
+      }
+    }
+  }
+
+
+/*=============================================================================
+    Floating label input
+ =============================================================================*/
+
+  .floating-label {
+    position: relative;
+    display: block;
+    height: auto;
+    line-height: 24px;
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    -webkit-transition: height 200ms cubic-bezier(.23, 1, .32, 1) 0ms;
+            transition: height 200ms cubic-bezier(.23, 1, .32, 1) 0ms;
+    background-color: transparent;
+    & > label {
+      position: absolute;
+      top: 24px;
+    }
+    & > input {
+      cursor: initial;
+      position: relative;
+      opacity: 0;
+      width: 100%;
+      line-height: 30px;
+      margin-top: 20px;
+      padding: 0;
+      border: none;
+      outline: none;
+      font-size: 18px;
+      color: rgba(0, 0, 0, .87);
+      background-color: transparent;
+      -webkit-tap-highlight-color: transparent;
+      -webkit-transition: all 450ms cubic-bezier(.23, 1, .32, 1) 0ms;
+              transition: all 450ms cubic-bezier(.23, 1, .32, 1) 0ms;
+      &:focus {
+        box-shadow: none;
+      }
+    }
+    & > hr {
+      position: absolute;
+      width: 100%;
+      border-bottom-width: 1px;
+      border-style: none none solid;
+      border-color: #E0E0E0;
+      box-sizing: content-box;
+      margin: 0 !important;
+      box-shadow: none;
+    }
+    & > hr.focus {
+      margin-top: -1px;
+      border-bottom-width: 2px;
+      border-style: none none solid;
+      border-color: $theme-color;
+      -webkit-transform: scaleX(0);
+              transform: scaleX(0);
+      -webkit-transition: all 450ms cubic-bezier(.23, 1, .32, 1) 0ms;
+              transition: all 450ms cubic-bezier(.23, 1, .32, 1) 0ms;
+    }
+    & > .error {
+      margin-top: 10px;
+    }
+
+    &.focused {
+      & > label {
+        -webkit-transform: perspective(1px) scale(.75) translate3d(0, -28px, 0);
+                transform: perspective(1px) scale(.75) translate3d(0, -28px, 0);
+      }
+      & > input { opacity: 1 }
+      & > hr.focus {
+        -webkit-transform: scale(1);
+                transform: scale(1)
+      }
+    }
+    &.error  > label {
+      color: $error-color;
+    }
+  }
+
+
+/*=============================================================================
+    Textarea
+ =============================================================================*/
+
+  .textarea {
+    & > label {
+      font-size: 16px;
+    }
+    & > textarea {
+      width: 100%;
+      max-width: 100%;
+      border: 1px solid #E0E0E0;
+      -webkit-transition: all 450ms cubic-bezier(.23, 1, .32, 1) 0ms;
+              transition: all 450ms cubic-bezier(.23, 1, .32, 1) 0ms;
+      &:focus {
+        outline: none;
+        border-color: $theme-color;
+      }
+    }
+  }
+
+
+/*=============================================================================
+    Form Loading
+ =============================================================================*/
+
+  .form--loading:before {
+    content: '';
+  }
+
+  .form--loading .form__spinner {
+    display: block;
+  }
+
+  .form:before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.7);
+    z-index: 10;
+  }
+
+  .form__spinner {
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 11;
+  }
+
+}

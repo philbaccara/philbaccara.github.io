@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html class="no-js" lang="{{ page.lang }}">
+
+  {% include head.html %}
+
+  <body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top"  data-offset="151">
+
+    <!--[if lt IE 8]>
+      <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+
+    {% include navigation.html %}
+
+    {{ content }}
+
+    <button type="button" id="scrollToTop" class="back-to-top">
+      <i class="fa fa-arrow-up"></i>
+    </button>
+
+    {% include footer.html %}
+    {% include terms_and_policies.html %}
+
+    {% include js.html %}
+
+  </body>
+
+</html>

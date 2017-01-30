@@ -1,0 +1,66 @@
+<!-- Post-metas Start -->
+
+<div class="post-meta">
+
+  <div class="post-meta__category">
+    <strong>
+      <i class="fa fa-fw fa-folder-open" aria-hidden="true"></i>{{ site.data.post.content.category[page.lang] }}
+    </strong>
+    {{ site.data.blog.content.categories[page.category][page.lang] }}
+  </div>
+
+  <div class="post-meta__taxonomy">
+    <strong>
+      <i class="fa fa-fw fa-tags" aria-hidden="true"></i>Tags :
+    </strong>
+    <ul class="tags-list" itemprop="keywords">
+      {% for tag in page.tags %}
+      <li class="tag">
+        {% if page.lang == 'fr' %}
+        <a href="{{ site.baseurl }}/fr/blog.html?cat={{ page.category }}&tag={{ tag }}">
+          {{ tag }}
+        </a>
+        {% else %}
+        <a href="{{ site.baseurl }}/blog.html?cat={{ page.category }}&tag={{ tag }}">
+          {{ tag }}
+        </a>
+        {% endif %}
+      </li>
+      {% endfor %}
+    </ul>
+  </div>
+
+  {% if page.modified %}
+    <div class="post__date">
+      <strong>
+        <i class="fa fa-fw fa-calendar" aria-hidden="true"></i>
+        {{ site.data.post.content.updated[page.lang] }}
+      </strong>
+      <time datetime="{{ page.modified | date: "%Y-%m-%d" }}">
+        {% if page.lang == "fr" %}
+          {% include date.html date=page.date %}
+          {{day}} {{month}} {{year}}
+        {% else %}
+          {{ page.date | date: "%B %d, %Y" }}
+        {% endif %}
+      </time>
+    </div>
+  {% elsif page.date %}
+    <div class="page__date">
+      <strong>
+        <i class="fa fa-fw fa-calendar" aria-hidden="true"></i>
+        {{ site.data.post.content.published[page.lang] }}
+      </strong>
+      <time datetime="{{ page.date | date_to_xmlschema }}">
+        {% if page.lang == "fr" %}
+          {% include date.html date=page.date %}
+          {{day}} {{month}} {{year}}
+        {% else %}
+          {{ page.date | date: "%B %d, %Y" }}
+        {% endif %}
+      </time>
+    </div>
+  {% endif %}
+</div>
+
+<!-- Post-metas End -->

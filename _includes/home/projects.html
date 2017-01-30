@@ -1,0 +1,68 @@
+<!-- Projects Start -->
+
+{% assign projects = site.posts | where: "lang", page.lang | where: "category", "projects" %}
+
+<section id="projects" class="container content-section text-center">
+  <h2><span>{{ site.data.home.content.titles.projects[page.lang] }}</span></h2>
+  <ul class="projects-thumbs">
+    {% for project in projects %}
+      {% capture side_anim %}{% cycle 'by_left', 'by_right' %}{% endcapture %}
+      <li class="project-thumb">
+        <a href="{{ site.baseurl }}{{ project.permalink }}" class="project-thumb__img js-go_upon {{ side_anim }}">
+          <img src="{{ site.baseurl }}/img/projects/{{ project.img.thumbnail }}" alt="{{ project.name }}"/>
+        </a>
+        <div class="project-thumb-desc">
+          <h2 class="project-thumb-desc__title">
+            <a href="{{ site.baseurl }}{{ project.permalink }}">{{ project.name }}</a>
+          </h2>
+          <div class="project-thumb-desc__about">
+            {{ project.about }}
+          </div>
+          {% if project.release %}
+          <div class="project-thumb-desc__release">
+            <i class="fa fa-calendar"></i> {{ project.release }}
+          </div>
+          {% endif %}
+          {% if project.link %}
+          <div class="project-thumb-desc__link">
+            <i class="fa fa-link"></i>
+            <a href="{{ project.link }}" class="animated" target="_blank">
+              {{ project.link }}
+            </a>
+          </div>
+          {% endif %}
+          <hr>
+          <ul class="project-thumb-desc__languages">
+            {% assign languages = "" | split: '|' %}
+            {% if project.stack.frontend or project.stack.backend %}
+              {% if project.stack.frontend %}
+                {% for language in project.stack.frontend %}{% assign languages = languages | push: language %}{% endfor %}
+              {% endif %}
+              {% if project.stack.backend %}
+                {% for language in project.stack.backend %}{% assign languages = languages | push: language %}{% endfor %}
+              {% endif %}
+            {% else %}
+              {% for language in project.stack %}{% assign languages = languages | push: language %}{% endfor %}
+            {% endif %}
+            {% for language in languages %}
+              <li class="project-thumb-desc__language">
+                <img src="{{ site.baseurl }}/img/languages/{{ language | replace: ' ', '' | downcase }}.png" alt="{{ language }}" />
+                <span class="tooltip tooltip--bottom">{{ language }}</span>
+              </li>
+              {% if forloop.index > 7 %}
+                <li class="project-thumb-desc__language project-thumb-desc__language--etc">
+                  <a href="{{ site.baseurl }}{{ project.permalink }}">
+                    <i class="fa fa-ellipsis-h"></i>
+                  </a>
+                </li>
+                {% break %}
+              {% endif %}
+            {% endfor %}
+          </ul>
+        </div>
+      </li>
+    {% endfor %}
+  </ul>
+</section>
+
+<!-- Projects End -->

@@ -1,0 +1,48 @@
+no-posts:
+  en: "No Posts..."
+  fr: "Pas de billets pour l'instant..."
+levels:
+  beginner:
+    en: "Beginner"
+    fr: "Débutant(e)"
+  middle:
+    en: "Middle"
+    fr: "Intermédiaire"
+  confirmed:
+    en: "Confirmed"
+    fr: "Confirmé(e)"
+readtime:
+  lessthan:
+    en: "less than 1 minute read"
+    fr: "moins d'1 minute de lecture"
+  minute:
+    en: "1 minute read"
+    fr: "1 minute de lecture"
+  minutes:
+    en: "minutes read"
+    fr: "minutes de lecture"
+ressources:
+  title:
+    en: "Go further"
+    fr: "Pour aller plus loin"
+  english:
+    en: "Additional resources in English :"
+    fr: "Ressources complémentaires en Anglais :"
+  french:
+    en: "Additional resources in French :"
+    fr: "Ressources complémentaires en Français :"
+previous:
+  en: "Previous"
+  fr: "Précédent"
+next:
+  en: "Next"
+  fr: "Suivant"
+category:
+  en: "Category :"
+  fr: "Catégorie :"
+published:
+  en: "Published on :"
+  fr: "Publié le :"
+updated:
+  en: "Last Update :"
+  fr: "Dernière mise à jour :"

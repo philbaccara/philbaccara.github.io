@@ -1,0 +1,11 @@
+<!-- Terms And Policies Modal Start -->
+
+<div id="termsAndPoliciesModal" class="modal">
+  <div class="content">
+    <i class="close-icon"></i>
+    {% capture terms-and-policies %}{{ site.pages | where: 'ref', 'terms_and_policies' | where: 'lang', page.lang }}{% endcapture %}
+    {{ terms-and-policies | markdownify }}
+  </div>
+</div>
+
+<!-- Terms And Policies Modal End -->

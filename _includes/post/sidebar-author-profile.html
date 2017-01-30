@@ -1,0 +1,151 @@
+{% if page.author and site.data.authors[page.author] %}
+  {% assign author = site.data.authors[page.author] %}
+{% else %}
+  {% assign author = site.author %}
+{% endif %}
+
+<!-- Author-profile Start -->
+
+<div class="author__sidebar js-sticky" itemscope itemtype="http://schema.org/Person">
+
+  {% if author.avatar %}
+    <div class="author__avatar">
+      <img src="{{ site.baseurl }}/img/authors/{{ author.avatar }}" class="author__avatar" alt="{{ author.name }}" itemprop="image">
+    </div>
+  {% endif %}
+
+  <div class="author__content">
+    <h3 class="author__name" itemprop="name">{{ author.name }}</h3>
+    {% if author.bio %}
+      <p class="author__bio" itemprop="description">
+        {{ author.bio }}
+      </p>
+    {% endif %}
+    {% if author.location %}
+      <p class="author__location" itemprop="homeLocation" itemscope itemtype="http://schema.org/Place">
+        <i class="fa fa-fw fa-map-marker" aria-hidden="true"></i>
+        <span itemprop="name"> {{ author.location }} </span>
+      </p>
+    {% endif %}
+  </div>
+
+  <div class="author__urls-wrapper">
+    <ul class="author__urls social-icons">
+
+      {% if author.url %}
+        <li>
+          <i class="fa fa-fw fa-chain" aria-hidden="true"></i>
+          <a href="{{ author.url }}" itemprop="url" class="animated" target="_blank">
+            Website
+          </a>
+        </li>
+      {% endif %}
+
+      {% if author.email %}
+        <li>
+          <i class="fa fa-fw fa-envelope-square" aria-hidden="true"></i>
+          <a href="mailto:{{ author.email }}" class="animated">
+            <meta itemprop="email" content="{{ author.email }}" />
+            Email
+          </a>
+        </li>
+      {% endif %}
+
+      <!-- Social Links Start -->
+
+      {% if author.twitter %}
+        <li>
+          <i class="fa fa-fw fa-twitter-square" aria-hidden="true"></i>
+          <a href="https://twitter.com/{{ author.twitter }}" itemprop="sameAs" class="animated" target="_blank">
+            Twitter
+          </a>
+        </li>
+      {% endif %}
+      {% if author.facebook %}
+        <li>
+          <i class="fa fa-fw fa-facebook-square" aria-hidden="true"></i>
+          <a href="https://www.facebook.com/{{ author.facebook }}" itemprop="sameAs" class="animated" target="_blank">
+            Facebook
+          </a>
+        </li>
+      {% endif %}
+      {% if author.google_plus %}
+        <li>
+          <i class="fa fa-fw fa-google-plus-square" aria-hidden="true"></i>
+          <a href="https://plus.google.com/+{{ author.google_plus }}" itemprop="sameAs" class="animated" target="_blank">
+            Google+
+          </a>
+        </li>
+      {% endif %}
+      {% if author.linkedin %}
+        <li>
+          <i class="fa fa-fw fa-linkedin-square" aria-hidden="true"></i>
+          <a href="https://www.linkedin.com/in/{{ author.linkedin }}" itemprop="sameAs" class="animated" target="_blank">
+            LinkedIn
+          </a>
+        </li>
+      {% endif %}
+      {% if author.bitbucket %}
+        <li>
+          <i class="fa fa-fw fa-bitbucket" aria-hidden="true"></i>
+          <a href="https://bitbucket.org/{{ author.bitbucket }}" itemprop="sameAs" class="animated" target="_blank">
+            Bitbucket
+          </a>
+        </li>
+      {% endif %}
+      {% if author.github %}
+        <li>
+          <i class="fa fa-fw fa-github" aria-hidden="true"></i>
+          <a href="https://github.com/{{ author.github }}" itemprop="sameAs" class="animated" target="_blank">
+            Github
+          </a>
+        </li>
+      {% endif %}
+      {% if author.stackoverflow %}
+        <li>
+          <i class="fa fa-fw fa-stack-overflow" aria-hidden="true"></i>
+          <a href="https://www.stackoverflow.com/users/{{ author.stackoverflow }}" itemprop="sameAs" class="animated" target="_blank">
+            Stackoverflow
+          </a>
+        </li>
+      {% endif %}
+      {% if author.lastfm %}
+        <li>
+          <i class="fa fa-fw fa-lastfm-square" aria-hidden="true"></i>
+          <a href="https://last.fm/user/{{ author.lastfm }}" itemprop="sameAs" class="animated" target="_blank">
+            Last.fm
+          </a>
+        </li>
+      {% endif %}
+      {% if author.steam %}
+        <li>
+          <i class="fa fa-fw fa-steam-square" aria-hidden="true"></i>
+          <a href="https://steamcommunity.com/id/{{ author.steam }}" itemprop="sameAs" class="animated" target="_blank">
+            Steam
+          </a>
+        </li>
+      {% endif %}
+      {% if author.youtube %}
+        <li>
+          <i class="fa fa-fw fa-youtube-square" aria-hidden="true"></i>
+          <a href="https://www.youtube.com/user/{{ author.youtube }}" itemprop="sameAs" class="animated" target="_blank">
+            YouTube
+          </a>
+        </li>
+      {% endif %}
+      {% if author.soundcloud %}
+        <li>
+          <i class="fa fa-fw fa-soundcloud" aria-hidden="true"></i>
+          <a href="https://soundcloud.com/{{ author.soundcloud }}" itemprop="sameAs" class="animated" target="_blank">
+            Soundcloud
+          </a>
+        </li>
+      {% endif %}
+
+      <!-- Social Links End -->
+
+    </ul>
+  </div>
+</div>
+
+<!-- Author-profile End -->

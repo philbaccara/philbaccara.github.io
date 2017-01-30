@@ -1,0 +1,53 @@
+/*=============================================================================
+   Typography
+ =============================================================================*/
+
+/* paragraph indention */
+$indent                       : 1.3em !default;
+
+
+/*=============================================================================
+    Colors
+ =============================================================================*/
+
+$bg-color                     : #eee !default;
+
+$primary-color                : #eee !default;
+$secondary-color              : #222 !default;
+$theme-color                  : #65b95a !default;
+$lighter-theme-color          : #8acb82 !default;
+
+// Font color
+$font-color                   : #111 !default;
+$inverted-font-color          : #f6f6f6 !default;
+$error-color                  : #cc0000 !default;
+
+/* links */
+// $link-color                 : $primary-color !default;
+// $link-color-hover           : mix(#000, $link-color, 25%) !default;
+// $link-color-visited         : mix(#fff, $link-color, 25%) !default;
+
+$header-bg-color              : $primary-color !default;
+$intro-text-color             : $inverted-font-color !default;
+$footer-text-color            : $inverted-font-color !default;
+
+// Navigation bar
+$navbar-color                 : $inverted-font-color !default;
+$navbar-lg-bg                 : transparent !default;
+$navbar-lg-collapse-bg-color  : $secondary-color !default;
+$navbar-sm-bg-color           : $navbar-lg-collapse-bg-color !default;
+
+// CV
+$skill-item-fill              : #4b6065 !default;
+
+
+/*=============================================================================
+    Breakpoints
+ =============================================================================*/
+
+$x-small                      : 414px !default;
+$small                        : 600px !default;
+$medium                       : 768px !default;
+$medium-wide                  : 992px !default;
+$large                        : 1024px !default;
+$x-large                      : 1280px !default;

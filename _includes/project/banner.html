@@ -1,0 +1,27 @@
+<!-- Banner Start -->
+
+<header class="project-banner">
+  <div class="project-banner__bg" style="background-image: url({{ site.baseurl }}/img/projects/{{ page.img.banner }})">
+  </div>
+  <div class="project-banner__body">
+    <div class="container">
+      <h1 class="project-banner__title">{{ page.name }}</h1>
+      <ul class="project-banner__links">
+        {% if page.links.website %}
+        <li class="project-banner__link">
+          <a href="{{ page.links.website }}"><i class="fa fa-link"></i></a>
+          <span class="tooltip tooltip--bottom tooltip--inverted">Website</span>
+        </li>
+        {% endif %}
+        {% if page.links.github %}
+        <li class="project-banner__link">
+          <a href="{{ page.links.github }}"><i class="fa fa-github"></i></a>
+          <span class="tooltip tooltip--bottom tooltip--inverted">Github</span>
+        </li>
+        {% endif %}
+      </ul>
+    </div>
+  </div>
+</header>
+
+<!-- Banner End -->

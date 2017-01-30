@@ -1,0 +1,56 @@
+---
+layout: default
+---
+
+{% include post/banner.html %}
+
+<div class="post">
+  <div class="container">
+
+    {% include post/sidebar-author-profile.html %}
+
+    <div class="post-main">
+
+      <article class="post-content markdown-content">
+        <div class="post-category">
+          {{ site.data.blog.content.categories[page.category][page.lang] }}
+          {% if page.level %}
+            - {{ site.data.post.content.levels[page.level][page.lang] }}
+          {% endif %}
+        </div>
+        <div class="post-content__readtime">
+          <i class="fa fa-clock-o" aria-hidden="true"></i>
+          {% assign words = page.content | strip_html | number_of_words %}
+          {% if words < 180 %}
+            {{ site.data.post.content.readtime.lessthan[page.lang] }}
+          {% elsif words < 360 %}
+            {{ site.data.post.content.readtime.minute[page.lang] }}
+          {% else %}
+            {{ words | divided_by: site.words-per-minute }} {{ site.data.post.content.readtime.minutes[page.lang] }}
+          {% endif %}
+        </div>
+
+        {{ content | markdownify }}
+
+        {% if page.ressources %}
+          {% include post/ressources.html %}
+        {% endif %}
+
+      </article>
+
+      {% include post/pagination.html %}
+
+      {% include post/author-profile.html %}
+
+      {% include post/metas.html %}
+      <hr>
+      {% include post/share.html %}
+
+      {% if page.comments %}
+        {% include post/disqus.html%}
+      {% endif %}
+
+    </div>
+
+  </div>
+</div>

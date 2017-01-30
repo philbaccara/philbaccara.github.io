@@ -1,0 +1,111 @@
+<!-- HEAD Start -->
+{% assign url = page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url %}
+{% capture description %}{%
+  if page.description
+    %}{{ page.description }}{%
+  else
+    %}{{ page.excerpt | strip_html | strip_newlines | truncate: 80 }}{%
+  endif %}{%
+endcapture %}
+{% capture page-title
+  %}{{ site.title }}{%
+  unless page.ref == 'home' %}{%
+    if page.title %}
+      &nbsp;|> {{ page.title }}{%
+    endif %}{%
+  endunless %}{%
+endcapture %}
+
+<head>
+  {% include force-https.html %}
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>{{ page-title }}</title>
+
+  <meta name="description" content="{{ description }}">
+  <meta name="author" content="{{ site.author.name }}">
+  <meta name="keywords" content="{{ site.keywords }}">
+
+  <link rel="canonical" href="{{ url }}">
+
+  <meta property="og:url" content="{{ site.url }}{{ page.url }}" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="{{ page.title }}" />
+  <meta property="og:description" content="{{ description }}" />
+  {% if page.img %}
+  <meta property="og:image" content="{{ site.url }}{{ site.baseurl }}/assets/img/posts/{{ page.banner }}" />
+  {% endif %}
+  <script type="application/ld+json">
+    { "@context"    : "http://schema.org",
+      "@type"       : "WebPage",
+      "headline"    : "{{ page-title }}",
+      "description" : "{{ description }}",
+      "url"         : "{{ site.url }}{{ page.url }}"
+    }
+  </script>
+  <link type="text/plain" rel="author" href="{{ site.url }}/humans.txt" />
+
+  {% assign posts = site.posts | where: "ref", page.ref | sort: 'lang' %}
+  {% for post in posts %}
+  {% unless post.lang == page.lang %}
+  <link rel="alternate" hreflang="{{ post.lang }}" href="{{ post.url }}" />
+  {% endunless %}
+  {% endfor %}
+
+  {% assign site-pages = site.pages | where: "ref", page.ref | sort: 'lang' %}
+  {% for site-page in site-pages %}
+  {% unless site-page.lang == page.lang %}
+  <link rel="alternate" hreflang="{{ site-page.lang }}" href="{{ site-page.url }}" />
+  {% endunless %}
+  {% endfor %}
+
+  <link rel="alternate" type="application/rss+xml" title="{{ site.title[page.lang] }}" href="{{ site.feed[page.lang] | prepend: site.baseurl | prepend: site.url }}">
+
+  {% if page.ref == "cv" %}
+  <meta name="robots" content="noindex, nofollow" />
+  {% endif %}
+  <link rel="stylesheet" href="{{site.baseurl}}/vendor/css/normalize.css">
+  <!-- Bootstrap Core CSS -->
+  <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css"> -->
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="{{site.baseurl}}/css/main.css">
+
+  <!-- Custom Fonts -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+
+  <!-- Core CSS file -->
+  <link rel="stylesheet" href="{{ site.baseurl }}/vendor/css/photoswipe.css">
+
+  <!-- Skin CSS file (styling of UI - buttons, caption, etc.)
+       In the folder of skin CSS file there are also:
+       - .png and .svg icons sprite,
+       - preloader.gif (for browsers that do not support CSS animations) -->
+  <link rel="stylesheet" href="{{ site.baseurl }}/vendor/css/default-skin/default-skin.css">
+
+  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+  <![endif]-->
+
+  {% if site.favicon %}
+    <link rel="shortcut icon" type="image/x-icon" href="{{site.baseurl}}{{site.favicon}}" />
+  {% endif %}
+
+  {% if page.url == "/404.html" | prepend: {{site.baseurl}} %}
+    <meta http-equiv="refresh" content="20; url={{site.baseurl}}/">
+  {% endif %}
+
+  {% include web-app.html %}
+
+  {% include color-browser.html %}
+
+</head>
+
+<!-- HEAD End -->

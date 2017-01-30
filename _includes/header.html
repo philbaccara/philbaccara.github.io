@@ -1,0 +1,26 @@
+<!-- Intro Start -->
+
+{% if (page.ref == 'home') %}
+<header class="intro" style="background-image: url({{ site.baseurl }}/img/intro-bg-{{ page.ref }}.jpg)">
+{% else %}
+<header class="small intro" style="background-image: url({{ site.baseurl }}/img/intro-bg-{{ page.ref }}.jpg)">
+{% endif %}
+  <div class="intro__body">
+    <div class="container">
+      <a href="#about" class="intro__img-me js-page-scroll">
+        <img src="{{site.baseurl}}{{ site.me-img }}" alt="">
+      </a>
+      <div class="intro__text">
+        <h2 class="intro__job-heading">{{ site.my-jobs[page.lang] }}</h2>
+        <span class="intro__typed-text js-typed">{{ content }}</span>
+      </div>
+    </div>
+  </div>
+  {% if (page.ref == 'home') %}
+  <a href="#about" class="intro__learn-more js-page-scroll">
+    {{ site.data.header.learn-more[page.lang] }}
+  </a>
+  {% endif %}
+</header>
+
+<!-- Intro End -->

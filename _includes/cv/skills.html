@@ -1,0 +1,30 @@
+
+<!-- Skills Start -->
+
+<h2>{{ site.data.cv.content.skills.title[page.lang] }}</h2>
+{% for category in site.data.cv.skills %}
+  <div class="skills-cat">
+    <div class="skills-cat__side-title">
+      <h3>{{ category.title[page.lang] }}</h3>
+    </div>
+    {% if category.type == 'meter' %}
+      <ul class="skills-list">
+      {% for skill in category.list %}
+        <li class="skill-item js-meter">
+          <div class="skill-item__fill js-fill" data-ratio="{{ skill.ratio }}"></div>
+          <div class="skill-item__bar skill-item__bar--color"></div>
+          <span class="skill-item__name">{{ skill.name }}</span>
+        </li>
+      {% endfor %}
+      </ul>
+    {% else %}
+      <div class="skills-list">
+      {% for skill in category.list %}
+        {{ skill }}
+      {% endfor %}
+      </div>
+    {% endif %}
+  </div>
+{% endfor %}
+
+<!-- Skills End -->

@@ -1,0 +1,13 @@
+
+{% assign posts_i18n = site.posts | where: "ref", page.ref | sort: 'lang' %}
+{% if posts_i18n.size == 0 %}
+  {% assign posts_i18n = site.pages | where: "ref", page.ref | sort: 'lang' %}
+{% endif %}
+
+{% if posts_i18n.size > 1 %}
+<ul class="navbar-lang">
+  {% for post_i18n in posts_i18n %}
+    <li><a class="{{ post_i18n.lang }} disabled" href="{{ site.base-url }}{{ post_i18n.url }}">{{ post_i18n.lang }}</a></li>
+  {% endfor %}
+</ul>
+{% endif %}

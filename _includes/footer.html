@@ -1,0 +1,47 @@
+<!-- Footer Start -->
+
+<footer id="contact">
+	<div class="container">
+			<div class="contact">
+				<h3 class="contact__title">{{ site.data.footer.contact[page.lang] }}</h3>
+				<div class="contact__body">
+					<p class="contact__mobile">{{ site.author.mobile }}<p>
+          <p><a href="mailto:{{ site.author.email }}" class="contact__mail inverted animated">{{ site.author.email }}</a></p>
+          <p class="contact__address">
+						{{ site.author.location }}
+					</p>
+				</div>
+			</div>
+			<div class="follow-me">
+				<h3 class="follow-me__title">{{ site.data.footer.follow[page.lang] }}</h3>
+				<div class="follow-me__body">
+					<p class="follow-me__icons">
+            {% include social-buttons.html %}
+					</p>
+				</div>
+			</div>
+		</div>
+	</div>
+  <div class="copyright">
+		<div class="container">
+			<p class="terms-and-policies">
+				<a href="javascript:;" class="js-modal inverted animated">{{ site.data.footer.terms_and_policies[page.lang] }}</a>
+			</p>
+      <p>
+				Copyright &copy; {{ site.author.name }} {{ site.time | date: "%Y" }}
+			</p>
+      <p>
+        powered by
+        <a href="https://jekyllrb.com/" class="inverted animated" target="_blank">
+          Jekyll
+        </a>
+				&nbsp;hosted by
+        <a href="https://github.com/" class="inverted animated" target="_blank">
+          Github
+        </a>
+      </p>
+		</div>
+  </div>
+</footer>
+
+<!-- Footer End -->

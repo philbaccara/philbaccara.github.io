@@ -1,0 +1,99 @@
+
+<!-- Javascript Start -->
+
+<script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+<script type="text/javascript" src="{{ site.baseurl }}/vendor/js/typed.min.js"></script>
+<script type="text/javascript" src="{{ site.baseurl }}/vendor/js/stickyfill.min.js"></script>
+<script type="text/javascript" src="{{ site.baseurl }}/vendor/js/rrssb.min.js"></script>
+<script type="text/javascript" src="{{ site.baseurl }}/vendor/js/velocity.min.js"></script>
+<script type="text/javascript" src="{{ site.baseurl }}/vendor/js/photoswipe.min.js"></script>
+<script type="text/javascript" src="{{ site.baseurl }}/vendor/js/photoswipe-ui-default.min.js"></script>
+
+<script type="text/javascript" src="{{ site.baseurl }}/js/main.js"></script>
+<script type="text/javascript" src="{{ site.baseurl }}/js/blog.js"></script>
+<script type="text/javascript" src="{{ site.baseurl }}/js/cv.js"></script>
+
+{% if site.dynamic-typing %}
+
+  <!-- Dynamic Typing Start -->
+
+  <script type="text/javascript">
+
+  var myQuotes =  new Array();
+  {% for line in site.lines %}
+    myQuotes.push("{{ line.text }}");
+  {% endfor %}
+
+  function shuffle(array) {
+    var currentIndex = array.length, temporaryValue, randomIndex ;
+
+    // While there remain elements to shuffle...
+    while (0 !== currentIndex) {
+
+      // Pick a remaining element...
+      randomIndex = Math.floor(Math.random() * currentIndex);
+      currentIndex -= 1;
+
+      // And swap it with the current element.
+      temporaryValue = array[currentIndex];
+      array[currentIndex] = array[randomIndex];
+      array[randomIndex] = temporaryValue;
+    }
+
+    return array;
+  }
+
+  {% if site.shuffle %}
+    shuffle(myQuotes)
+  {% endif %}
+
+  $(".js-typed").typed({
+    strings: myQuotes,
+    typeSpeed: {{ site.type-speed }},
+    backDelay: {{ site.delete-delay }},
+    startDelay: {{ site.start-delay }},
+    loop: {{ site..loop }},
+    loopCount: {{ site.loop-count }},
+    cursorChar: "|"
+  });
+  </script>
+
+  <!-- Dynamic Typing End  -->
+
+{% endif %}
+
+
+{% if jekyll.environment == "production" %}
+  {% if site.google-tracking-id %}
+
+  <!-- Google Tracking Id Start -->
+
+  <script>
+    ( function(i,s,o,g,r,a,m) {
+      i['GoogleAnalyticsObject'] = r;
+      i[r] = i[r] || function() {
+      (i[r].q = i[r].q||[]).push(arguments)}, i[r].l = 1*new Date();
+      a = s.createElement(o),
+      m = s.getElementsByTagName(o)[0];
+      a.async = 1;
+      a.src = g;
+      m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+    ga('create', '{{ site.google-tracking-id }}', 'auto');
+    ga('send', 'pageview');
+  </script>
+
+  <!-- Google Tracking Id End -->
+
+  {% endif %}
+{% endif %}
+
+<script>
+function addTohistory() {
+  if (!window.location.host.startsWith("127.0.0.1")) {
+    history.pushState({}, '{{page.title}}', '{{site.url}}{{site.baseurl}}{{page.url}}');
+  }
+}
+</script>
+
+<!-- Javascript End -->

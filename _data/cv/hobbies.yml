@@ -1,0 +1,18 @@
+- name:
+    en: "Creation"
+    fr: "Création"
+  list:
+    en: [Guitar, Bass, Piano, Computer Assisted Music]
+    fr: [Guitare, Basse, Piano, Musique Assistée par Ordinateur]
+- name:
+    en: "Knowledge"
+    fr: "Culture"
+  list:
+    en: [Video games, Movies, Literature, Philosophy, Politic, Sociology]
+    fr: [Jeux vidéo, Cinéma, Littérature, Philosophie, Politique, Sociologie]
+- name:
+    en: "Sport"
+    fr: "Sport"
+  list:
+    en: [Bodybuilding, Running, Snooker & Pool, Rugby, Tennis, Boxing, Swimming]
+    fr: [Musculation, Running, Snooker & Billard Américain, Rugby, Tennis, Boxe, Natation]

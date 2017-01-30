@@ -1,0 +1,144 @@
+.author__avatar {
+  display: block;
+  width: auto;
+  height: auto;
+  margin: 0 10px;
+
+  img {
+    max-width: 150px;
+    border-radius: 50%;
+    padding: 5px;
+    /* border: 1px solid $border-color;*/
+  }
+}
+
+.author__name {
+  margin: 10px 0;
+  font-weight: bold;
+  text-transform: none;
+  color: #333;
+}
+
+.author__bio {
+  margin: 1em 0 1em 0;
+  font-size: 1.1em;
+  font-style: italic;
+  color: #666;
+}
+.author__location {
+  margin: 1em 0;
+  font-size: 1.1em;
+}
+
+/*=============================================================================
+    Author Profile
+ =============================================================================*/
+
+.author {
+  display: none;
+  margin: 0 50px;
+  .author__avatar,
+  .author__desc {
+    display: table-cell;
+    vertical-align: middle;
+    .author__name,
+    .author__bio,
+    .author__location {
+      margin: 0;
+    }
+    .author__location { color: #333; }
+  }
+  .author__urls {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    font-size: 1.5em;
+
+    li {
+      display: inline-block;
+      white-space: nowrap;
+      a {
+        > i { color: #666; }
+        &:hover > i { color: #222; }
+      }
+    }
+  }
+  hr {
+    margin: 20px -10px -20px -10px !important;
+  }
+  @media (max-width: $small) {
+    .author__avatar,
+    .author__desc {
+      margin: 0 auto;
+      display: block;
+      text-align: center;
+    }
+  }
+}
+
+/*=============================================================================
+    Sidebar Author Profile
+ =============================================================================*/
+
+.author__sidebar {
+  display: block;
+  float: left;
+  width: 300px;
+  padding: 100px 30px 0 30px;
+  opacity: .8;
+  -webkit-transition: opacity 0.2s ease-in-out;
+          transition: opacity 0.2s ease-in-out;
+  &:hover {
+    opacity: 1;
+  }
+
+  &.js-sticky {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0px;
+  }
+
+  .author__content {
+    display: block;
+    width: 100%;
+    padding: 0;
+    line-height: 1;
+    .author__name { letter-spacing: 0px }
+    .author__location {
+      padding-left: 25px;
+      i { margin-left: -25px }
+    }
+  }
+
+
+  .author__urls {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    font-size: 1.1em;
+
+    li {
+      white-space: nowrap;
+      margin-top: .5em;
+    }
+  }
+}
+
+@media (max-width: $medium-wide) {
+  .author {
+    display: block;
+  }
+  .author__sidebar {
+    display: none;
+  }
+}
+@media (max-width: $x-small) {
+  .author {
+    margin: 0;
+    hr {
+      margin: 20px 0 !important;
+    }
+  }
+}

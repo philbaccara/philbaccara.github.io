@@ -1,0 +1,49 @@
+<!-- Post Pagination Start -->
+
+<nav class="post-pagination">
+  {% for post in site.posts %}
+    {% if post.category == page.category and post.lang == page.lang %}
+      {% if prev %}
+        <a href="{{ post.url | absolute_url }}" class="post-pagination__pager post-pagination__pager--previous" title="{{ post.title | strip_html }}">
+          <i class="fa fa-chevron-left"></i>
+          {{ site.data.post.content.previous[page.lang] }}
+          <div class="post-pagination__pager-title">
+            {{ post.title | strip_html }}
+          </div>
+        </a>
+      {% else %}
+        <a href="#" class="post-pagination__pager disabled">
+          {{ site.data.post.content.previous[page.lang] }}
+        </a>
+      {% endif %}
+      {% assign prev = false %}
+      {% if post.id == page.id %}
+        {% assign prev = true %}
+      {% endif %}
+    {% endif %}
+  {% endfor %}
+
+  {% for post in site.posts reversed %}
+    {% if post.category == page.category and post.lang == page.lang %}
+      {% if next %}
+        <a href="{{ post.url | absolute_url }}" class="post-pagination__pager post-pagination__pager--next" title="{{ post.title | strip_html }}">
+        {{ site.data.post.content.next[page.lang] }}
+          <div class="post-pagination__pager-title">
+            {{ post.title | strip_html }}
+          </div>
+          <i class="fa fa-chevron-right"></i>
+        </a>
+      {% else %}
+        <a href="#" class="post-pagination__pager disabled">
+          {{ site.data.post.content.next[page.lang] }}
+        </a>
+      {% endif %}
+      {% assign next = false %}
+      {% if post.id == page.id %}
+        {% assign next = true %}
+      {% endif %}
+    {% endif %}
+  {% endfor %}
+</nav>
+
+<!-- Post Pagination End -->

@@ -1,0 +1,29 @@
+<!-- Ressources Start -->
+
+  <div class="post-content__ressources">
+    <h2>{{ site.data.post.content.ressources.title[page.lang] }}</h2>
+    {% for ressource in page.ressources %}
+      {% if ressource.english %}
+        <h3>{{ site.data.post.content.ressources.english[page.lang] }}</h3>
+        <ul>
+          {% for link in ressource.english %}
+          <li>
+            <a href="{{ link.href }}" target="_blank">{{ link.title }}</a>
+          </li>
+          {% endfor %}
+        </ul>
+      {% endif %}
+      {% if ressource.french %}
+        <h3>{{ site.data.post.content.ressources.french[page.lang] }}</h3>
+        <ul>
+          {% for link in ressource.french %}
+          <li>
+            <a href="{{ link.href }}" target="_blank">{{ link.title }}</a>
+          </li>
+          {% endfor %}
+        </ul>
+      {% endif %}
+    {% endfor %}
+  </div>
+
+<!-- Ressources End -->

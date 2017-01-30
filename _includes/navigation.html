@@ -1,0 +1,65 @@
+<!-- Navigation Start -->
+{% if page.lang != "en" %}
+  {% assign lang = "/" | append: page.lang %}
+{% else %}
+  {% assign lang = "" %}
+{% endif %}
+
+<nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
+        <i class="fa fa-bars"></i>
+      </button>
+      {% if page.ref == "home" %}
+      <a class="navbar-brand js-page-scroll" href="#page-top">
+      {% else %}
+      <a class="navbar-brand" href="{{ site.baseurl }}{{ lang }}/">
+      {% endif %}
+        <div>
+          {% if site.black-favicon %}
+            <img src="{{ site.baseurl }}{{ site.black-favicon }}" alt="">
+          {% endif %}
+          {{ site.title }}
+        </div>
+      </a>
+    </div>
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <nav class="collapse navbar-collapse navbar-right navbar-main-collapse">
+      <ul class="nav navbar-nav">
+        {% if page.ref == 'home' %}
+
+          <!-- Scroll to section for each page in index -->
+          {% for p in site.pages_list %}
+            <li>
+              {% if p[0] == 'blog' or p[0] == 'cv' %}
+                <a href="{{ site.baseurl }}{{ lang }}/{{ p[0] }}.html"> {{ p[1][page.lang] }} </a>
+              {% else %}
+                <a class="js-page-scroll" href="#{{ p[0] }}"> {{ p[1][page.lang] }} </a>
+              {% endif %}
+            </li>
+          {% endfor %}
+
+        {% else %}
+          <!-- Blog, Post, Tag and Error pages -->
+          {% for p in site.pages_list %}
+            <li>
+              {% if p[0]=='about' or p[0]=='projects' or p[0]=='contact' %}
+                <a href="{{ site.baseurl }}{{ lang }}/index.html#{{ p[0] }}"> {{ p[1][page.lang] }} </a>
+              {% else %}
+                {% if page.ref == p[0] %}
+                  <a href="{{ site.baseurl }}{{ lang }}/{{ p[0] }}.html" class="active"> {{ p[1][page.lang] }} </a>
+                {% else %}
+                  <a href="{{ site.baseurl }}{{ lang }}/{{ p[0] }}.html"> {{ p[1][page.lang] }} </a>
+                {% endif %}
+              {% endif %}
+            </li>
+          {% endfor %}
+        {% endif %}
+      </ul>
+      {% include select_lang.html %}
+    </div>
+  </nav>
+</nav>
+
+<!-- Navigation End -->

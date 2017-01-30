@@ -1,0 +1,13 @@
+/* TEAM */
+	Author: Philippe Baccara
+	Contact: baccara.philippe [at] gmail.com
+	From: Mulhouse, France
+
+
+/* SITE */
+	Last update: 2016/12/20
+	Language: English / French
+	Doctype: HTML5
+  Standards: HTML5, CSS3
+  Components: Jekyll 3, Sass, jQuery, rrssb.js, stickyfill.js, typed.js
+	IDE: IntelliJ, Atom

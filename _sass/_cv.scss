@@ -1,0 +1,557 @@
+.cv {
+  margin: 125px auto;
+  h2 {
+    /* display: inline-block;*/
+    display: block;
+    padding: .2em 1em;
+    font-size: 1.6em;
+    border-left: 8px solid $theme-color;
+    color: white;
+    background-color: rgb(42, 58, 67);
+    /* background-color: #666;*/
+    /* color: transparent;*/
+    /* text-shadow: 0 5px 3px rgba(255, 255, 255, .5);*/
+    /* -webkit-background-clip: text;*/
+    /* -moz-background-clip: text;*/
+    /* background-clip: text;*/
+  }
+
+  aside {
+    position: relative;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+    @media (min-width: $medium-wide) {
+      float: left;
+      width: 33.33333333%;
+    }
+  }
+  section.main {
+    position: relative;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+    article {
+      margin: 70px 0 0 0;
+    }
+    @media (min-width: $medium-wide) {
+      float: left;
+      width: 66.66666667%;
+    }
+    @media (min-width: 769px) and (max-width: 991px) {
+    margin-top: 100px;
+    }
+  }
+
+  .global {
+    margin-bottom: 2em;
+    font-size: 1.2em;
+    .driving-licence,
+    .private {
+      position: relative;
+      margin-bottom: .8em;
+      margin-left: 3.5em;
+    }
+    .private .fa-user {
+      position: absolute;
+      top: -2px;
+      left: -30px;
+      font-size: 1.5em;
+    }
+    .driving-licence {
+      .car {
+        position: absolute;
+        top: -2px;
+        left: -35px;
+        width: auto;
+        height: 25px;
+        margin-right: .5em;
+      }
+    }
+  }
+
+
+/*=============================================================================
+    Download CV
+ =============================================================================*/
+
+  .dl-cv {
+    margin-bottom: 40px;
+  }
+  .dl-cv__link {
+    display: block;
+    padding: 5px 10px;
+    font-size: 20px;
+    color: $secondary-color;
+    background-color: #ddd;
+    text-align: center;
+    box-shadow: 0 3px 9px rgba(0, 0, 0, .2),
+                0 2px 8px rgba(0, 0, 0, .2);
+    & > i {
+      margin: 0 10px;
+    }
+    &:hover {
+      color: $secondary-color;
+      background-color: #dfdfdf;
+      box-shadow: 0 6px 10px rgba(0, 0, 0, .2),
+                  0 4px 22px rgba(0, 0, 0, .3);
+    }
+    &:active {
+      box-shadow: none;
+    }
+    @media (min-width: $medium-wide) and (max-width: 1199px) {
+      font-size: 18px;
+      & > i { margin: 0 5px }
+    }
+    @media (max-width: $x-small) {
+      & > i { display: none; }
+      & > img {
+        display: block;
+        margin: 0 auto;
+      }
+    }
+  }
+  .dl-cv__icon {
+    width: 50px;
+  }
+
+
+/*=============================================================================
+    Skills
+ =============================================================================*/
+
+  /* Skills Category*/
+  .skills-cat {
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+       -ms-flex-direction: row;
+           flex-direction: row;
+    margin-bottom: 40px;
+  }
+
+  .skills-cat__side-title {
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+       -ms-flex-direction: column;
+           flex-direction: column;
+    -webkit-box-pack: center;
+       -ms-flex-pack: center;
+    justify-content: center;
+    width: 20px;
+    margin: 0 10px 0 0;
+    vertical-align: top;
+    & > h3 {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      margin: 0;
+      -webkit-transform: rotate(-90deg);
+              transform: rotate(-90deg);
+      -webkit-transform: translateX(-50%) translateY(-50%) rotate(-90deg);
+              transform: translateX(-50%) translateY(-50%) rotate(-90deg);
+      white-space: nowrap;
+    }
+  }
+
+  /* Skills List*/
+  .skills-list {
+    position: relative;
+    display: inline-block;
+    list-style: none;
+    width: calc(100% - 35px);
+    margin: 0;
+    padding: 0;
+    .skill-item {
+      position: relative;
+      width: 100%;
+      height: 22px;
+      border: 2px solid $skill-item-fill;
+      background-color: white;
+      margin-bottom: 10px;
+      &:last-child {
+        margin: 0;
+      }
+
+      &__bar,
+      &__fill,
+      &__name {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+      }
+      &__bar--color {
+        height: 100%;
+        background-color: $skill-item-fill;
+        mix-blend-mode: screen;
+        z-index: 3;
+      }
+      &__fill {
+        height: 18px;
+        background-color: black;
+        vertical-align: top;
+        z-index: 1;
+      }
+      &__name {
+        line-height: 18px;
+        color: white;
+        text-align: center;
+        mix-blend-mode: difference;
+        z-index: 2;
+      }
+    }
+  }
+
+  aside p {
+    padding-left: 30px;
+    font-size: 14px;
+    & ~ p {
+      margin-bottom: 1em;
+    }
+    .fa-star,
+    .fa-star-o,
+    .fa-star-half-o {
+      color: #4b6065;
+    }
+  }
+
+
+  /*=============================================================================
+      Git Like Graph
+   =============================================================================*/
+
+  .git-graph {
+    position: relative;
+    display: inline-block;
+    width: 170px;
+    vertical-align: top;
+    overflow: visible;
+    .dashed-path {
+      stroke-width: 3px;
+      stroke-dasharray: 8px;
+      stroke: #ccc;
+      fill: none;
+    }
+    .career-path {
+      stroke-width: 4px;
+      stroke: #666;
+      fill: none;
+    }
+    .timeline-title {
+      fill: #333;
+      font-size: 25px;
+      text-transform: uppercase;
+    }
+
+    @media (max-width: $medium) {
+      display: none;
+      visibility: hidden;
+    }
+  }
+
+
+/*=============================================================================
+    Experiences and Formations
+ =============================================================================*/
+
+  .experiences__title,
+  .formations__title {
+    display: none;
+  }
+
+  .experiences,
+  .formations {
+    position: relative;
+    display: inline-block;
+    list-style-type: none;
+    width: calc(100% - 180px);
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    vertical-align: top;
+    @media (max-width: $medium) { width: 100% }
+  }
+
+  .experience,
+  .formation {
+    position: relative;
+    margin-bottom: 10px;
+    z-index: 0;
+    &:last-child { margin-bottom: 0 }
+    &:hover {
+      &:before {
+        -webkit-transform: scale(1.6);
+                transform: scale(1.6);
+      }
+      > .content {
+        z-index: 1;
+        -webkit-transform: scale(1.06);
+                transform: scale(1.06);
+        box-shadow: 0 6px 20px -8px rgba(0, 0, 0, .5),
+                    0 4px 22px -6px rgba(0, 0, 0, .4);
+        -webkit-transition: box-shadow 200ms linear,
+                    z-index 200ms step-start,
+                    -webkit-transform 200ms linear;
+        transition: box-shadow 200ms linear,
+                    z-index 200ms step-start,
+                    -webkit-transform 200ms linear;
+        transition: transform 200ms linear,
+                    box-shadow 200ms linear,
+                    z-index 200ms step-start;
+        transition: transform 200ms linear,
+                    box-shadow 200ms linear,
+                    z-index 200ms step-start,
+                    -webkit-transform 200ms linear;
+      }
+      .experience__year:after,
+      .formation__year:after {
+        visibility: visible;
+        -webkit-transform: scaleX(1);
+        transform: scaleX(1);
+      }
+    }
+
+    /* Career dot*/
+    &:before {
+      content: '';
+      position: absolute;
+      top: 38px;
+      width: 20px;
+      height: 20px;
+      border: 4px solid $theme-color;
+      border-radius: 50%;
+      background-color: white;
+      -webkit-transition: -webkit-transform 200ms linear;
+      transition: -webkit-transform 200ms linear;
+      transition: transform 200ms linear;
+      transition: transform 200ms linear, -webkit-transform 200ms linear;
+    }
+    &.development:before { left: -123px }
+    &.music:before { left: -163px }
+
+    > .content {
+      position: relative;
+      -webkit-transition: box-shadow 200ms linear,
+                  z-index 100ms step-end,
+                  -webkit-transform 200ms linear;
+      transition: box-shadow 200ms linear,
+                  z-index 100ms step-end,
+                  -webkit-transform 200ms linear;
+      transition: transform 200ms linear,
+                  box-shadow 200ms linear,
+                  z-index 100ms step-end;
+      transition: transform 200ms linear,
+                  box-shadow 200ms linear,
+                  z-index 100ms step-end,
+                  -webkit-transform 200ms linear;
+    }
+    &:nth-child(odd) {
+      .experience__head,
+      .formation__head {
+        /* background-color: #b9b9b9;*/
+        background-color: #bcbfc5;
+      }
+    }
+    &:nth-child(even) {
+      .experience__head,
+      .formation__head {
+        /* background-color: #cfcfcf;*/
+        background-color: #a2a6ad;
+      }
+    }
+  }
+
+  .experience__year {
+    position: absolute;
+    top: 60px;
+    left: -92px;
+    color: $theme-color;
+    font-weight: bold;
+    -webkit-transform: rotate(-30deg);
+            transform: rotate(-30deg);
+    &:before {
+      content: '';
+      position: absolute;
+      top: 8px;
+      right: -70px;
+      width: 60px;
+      border-top: 2px solid white;
+    }
+    &:after {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 2px;
+      bottom: 0;
+      left: 0;
+      background-color: $theme-color;
+      visibility: hidden;
+      -webkit-transform: scaleX(0);
+              transform: scaleX(0);
+      -webkit-transition: all 0.3s ease-in-out 0s;
+              transition: all 0.3s ease-in-out 0s;
+    }
+  }
+
+  .experience__head,
+  .formation__head {
+    position: relative;
+    display: block;
+    padding: 20px 0 0 10px;
+    height: 50px;
+    font-size: 20px;
+    font-weight: normal;
+    vertical-align: baseline;
+    color: white;
+  }
+  .experience__address,
+  .formation__address {
+    position: absolute;
+    right: 10px;
+    top: 4px;
+    font-size: 15px;
+    font-weight: normal;
+    text-align: right;
+    color: #555;
+    .experience__city,
+    .formation__city {
+      font-style: italic;
+    }
+  }
+  .experience__body,
+  .formation__body {
+    background-color: #f6f6f6;
+    & > p {
+      margin: 0;
+      padding: 5px 10px;
+      font-size: 15px;
+      text-align: justify;
+      & > em {
+        font-style: normal;
+        color: #888;
+      }
+    }
+  }
+
+
+/*=============================================================================
+    Hobbies
+ =============================================================================*/
+
+  .hobbies p {
+    margin: 0 0 1em 1em;
+    font-size: 1.2em;
+  }
+
+/*=============================================================================
+    Medium size
+ =============================================================================*/
+
+  @media (max-width: $medium) {
+    .experiences__title,
+    .formations__title {
+      display: block;
+    }
+    .experience__year,
+    .formation__year {
+      position: relative;
+      display: inline-block;
+      -webkit-transform: none;
+              transform: none;
+      top: 0;
+      left: 12px;
+      margin-bottom: 1em;
+      padding: 3px 14px 3px 10px;
+      font-size: 11px;
+      line-height: 1.3;
+      color: white;
+      background-color: $lighter-theme-color;
+      &:before {
+        content: "";
+        position: absolute;
+        display: block;
+        width: auto;
+        top: 0;
+        bottom: 0;
+        right: inherit;
+        border: 10px solid $lighter-theme-color;
+        z-index: -1;
+        left: -1.2em;
+        border-right-width: 10px;
+        border-left-color: transparent !important;
+      }
+      &:after {
+        z-index: 10;
+        content: '';
+        position: absolute;
+        visibility: visible;
+        top: 0;
+        left: -35px;
+        width: 20px;
+        height: 20px;
+        border: 3px solid $theme-color;
+        border-radius: 50%;
+        background-color: white;
+        -webkit-transition: none;
+                transition: none;
+        -webkit-transform: none;
+                transform: none;
+      }
+    }
+    .experience,
+    .formation {
+      margin-bottom: 0 !important;
+      padding: 0 0 1em 2em;
+      &:before {
+        display: none;
+        visibility: hidden;
+      }
+      &:after {
+        content: "";
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 12px;
+        width: 4px;
+        background: rgba(255, 255, 255, 0.5);
+      }
+    }
+  }
+
+
+/*=============================================================================
+  Small size
+=============================================================================*/
+
+  @media (max-width: $small) {
+    .experience__head,
+    .formation__head {
+      height: auto;
+      min-height: 50px;
+      padding: .4em 1em;
+      .experience__address,
+      .formation__address {
+        position: relative;
+        padding-left: 10px;
+        text-align: left;
+        .experience__country,
+        .formation__school {
+          display: inline-block;
+          &:after { content: '- ' }
+        }
+        .experience__city,
+        .formation__city {
+          display: inline-block;
+        }
+      }
+    }
+  }
+}

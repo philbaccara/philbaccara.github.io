@@ -1,0 +1,62 @@
+---
+layout: default
+---
+
+{% include header.html %}
+
+<!-- CV Layout Start -->
+
+<div id="cv" class="cv container">
+  <aside>
+    <div class="dl-cv">
+      <a href="{{ site.baseurl }}/download/CV_-_Full-Stack_Developer-_Philippe_BACCARA.pdf" class="dl-cv__link" target="_blank">
+        {{ site.data.cv.content.download[page.lang] }}
+        <i class="fa fa-chevron-right" ></i>
+        <img src="{{ site.baseurl }}/img/dl-cv-pdf.png" alt="Download CV" class="dl-cv__icon" />
+      </a>
+    </div>
+
+    <section class="global">
+      <div class="private">
+        <i class="fa fa-user"></i>
+        {{ site.data.cv.content.global.private[page.lang] }}
+      </div>
+      <div class="driving-licence">
+        <img src="{{ site.baseurl }}/img/car.png" alt="permis b" class="car"/>
+        {{ site.data.cv.content.global.driving[page.lang] }}
+      </div>
+    </section>
+
+    {% include cv/skills.html %}
+
+    <h2>{{ site.data.cv.content.methods.title[page.lang] }}</h2>
+    <p>
+      {{ site.data.cv.content.methods.list | join: ', '}}
+    </p>
+
+
+    <h2>{{ site.data.cv.content.languages.title[page.lang] }}</h2>
+    {% for language in site.data.cv.content.languages.list %}
+    <p>
+      <u>{{ language.name[page.lang] }}</u> : {{ language.level[page.lang] }}
+      {% if language.others %}
+        <br>{{ language.others[page.lang] }}
+      {% endif %}
+    </p>
+    {% endfor %}
+  </aside>
+  <section class="main">
+    {% include cv/experiences.html %}
+    {% include cv/formations.html %}
+    <article class="hobbies">
+      <h2>{{ site.data.cv.content.hobbies.title[page.lang] }}</h2>
+      {% for hobby in site.data.cv.hobbies %}
+        <p>
+          <u>{{ hobby.name[page.lang] }}</u> : {{ hobby.list[page.lang] | join: ', ' }}
+        </p>
+      {% endfor %}
+    </article>
+  </section>
+</div>
+
+<!-- CV Layout End -->

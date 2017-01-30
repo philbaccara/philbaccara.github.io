@@ -1,0 +1,34 @@
+title:
+  en: "Leave a comment"
+  fr: "Laisser un commentaire"
+signaling:
+  en: "Required fields are marked"
+  fr: "Les champs requis sont marqués d'un"
+loading:
+  en: "Loading..."
+  fr: "Chargement.."
+comment:
+  label:
+    en: "Comment"
+    fr: "Commentaire"
+  hint:
+    en: "Markdown is supported."
+    fr: "Markdown est supporté."
+name:
+  label:
+    en: "Name"
+    fr: "Nom"
+mail:
+  label:
+    en: "Email"
+    fr: "Courriel"
+  hint:
+    en: "Your email address will not be published."
+    fr: "Votre adresse de courriel ne sera pas publiée."
+website:
+  label:
+    en: "Website (optional)"
+    fr: "Site Internet (optionnel)"
+submit:
+  en: "Submit Comment"
+  fr: "Poster Mon Commentaire"

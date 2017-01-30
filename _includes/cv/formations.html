@@ -1,0 +1,34 @@
+
+<!-- Formations Start -->
+
+<article>
+
+  {% include cv/formation-git-graph.html %}
+
+  <h2 class="formations__title">{{ site.data.cv.content.formations.title[page.lang] }}</h2>
+  <ul class="formations">
+    {% for formation in site.data.cv.formations %}
+      <li class="formation {{ formation.career }}">
+        <div class="experience__year">{{ formation.year }}</div>
+        <div class="content">
+          <div class="formation__head">
+            {{ formation.diploma[page.lang] }}
+            <div class="formation__address">
+              <div class="formation__school">
+                {{ formation.school }}
+              </div>
+              <div class="formation__city">
+                {{ formation.city }}
+              </div>
+            </div>
+          </div>
+          <div class="formation__body">
+            {{ formation.spec[page.lang] | markdownify }}
+          </div>
+        </div>
+      </li>
+    {% endfor %}
+  </ul>
+</article>
+
+<!-- Formations End -->

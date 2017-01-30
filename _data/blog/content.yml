@@ -1,0 +1,10 @@
+categories:
+  development:
+    en: "Development"
+    fr: "Développement"
+  music:
+    en: "Music"
+    fr: "Musique"
+all:
+  en: "all"
+  fr: "tous"

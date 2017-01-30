@@ -1,0 +1,57 @@
+download:
+  en: "Download My CV"
+  fr: "Télécharger mon CV"
+global:
+  private:
+    en: "32 years old - single - without children"
+    fr: "32 ans - célibataire - sans enfants"
+  driving:
+    en: "Driver's license B (personal vehicle)"
+    fr: "Permis B (véhicule personnel)"
+skills:
+  title:
+    en: "Skills"
+    fr: "Compétences"
+methods:
+  title:
+    en: "Methods & Paradigms"
+    fr: "Méthodes & Paradigmes"
+  list: [Kanban, Agile, <abbr title="Don't Reapeat Yourself">DRY</abbr>, <abbr title="Test Drive Development">TDD</abbr>, <abbr title="Object-Oriented Programming">OOP</abbr>, <abbr title="Functionnal Programming">FP</abbr>, <abbr title="REpresentational State Transfer">RESTful</abbr>, <abbr title="Model View Controller">MVC</abbr>, <abbr title="Unified Modeling Language">UML2.0</abbr>, Merise]
+languages:
+  title:
+    en: "Languages"
+    fr: "Langues"
+  list:
+    - name:
+        en: "French"
+        fr: "Français"
+      level:
+        en: "native"
+        fr: "native"
+    - name:
+        en: "English"
+        fr: "Anglais"
+      level:
+        en: "<abbr title='Common European Framework of Reference for Languages'><a href='https://en.wikipedia.org/wiki/Common_European_Framework_of_Reference_for_Languages' class='animated' target='_blank'>CEFRL</a></abbr> level B2"
+        fr: "<abbr title='Cadre Européen Commun de Référence pour les Langues'><a href='https://fr.wikipedia.org/wiki/Cadre_européen_commun_de_référence_pour_les_langues' class='animated' target='_blank'>CECRL</a></abbr> niveau B2"
+      others:
+        en: '<nobr><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-half-o"></i> Read |</nobr>
+            <nobr><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-half-o"></i><i class="fa fa-star-o"></i> Understanded |</nobr>
+            <nobr><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-half-o"></i><i class="fa fa-star-o"></i> Written |</nobr>
+            <nobr><i class="fa fa-star"></i><i class="fa fa-star-half-o"></i><i class="fa fa-star-o"></i><i class="fa fa-star-o"></i> Spoken</nobr>'
+        fr: '<nobr><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-half-o"></i> Lu |</nobr>
+            <nobr><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-half-o"></i><i class="fa fa-star-o"></i> Compris |</nobr>
+            <nobr><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-half-o"></i><i class="fa fa-star-o"></i> &Eacute;cris |</nobr>
+            <nobr><i class="fa fa-star"></i><i class="fa fa-star-half-o"></i><i class="fa fa-star-o"></i><i class="fa fa-star-o"></i> Parlé</nobr>'
+experiences:
+  title:
+    en: "Experiences"
+    fr: "Expériences"
+formations:
+  title:
+    en: "Formations"
+    fr: "Formations"
+hobbies:
+  title:
+    en: "Hobbies"
+    fr: "Hobbies"

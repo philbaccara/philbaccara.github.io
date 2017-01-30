@@ -1,0 +1,193 @@
+# Site settings
+baseurl: "" # the subpath of your site, e.g. /blog/
+languages: [en, fr]
+
+# url: "http://philbaccara.github.io" # the base hostname & protocol for your site
+url: "http://0.0.0.0:4000"
+
+
+# Exclusion list from the generated _site
+exclude: ["LICENSE", "README.md", "CONTRIBUTING", "CONTRIBUTORS", "scripts"]
+
+# Disqus
+disqus:
+  shortname: "philbaccara-github-io"
+
+# Google tracking id
+google-tracking-id: ""
+
+
+# Forces https everywhere in your website, except when you serve it locally
+# If you are not hosted on Github Pages, and your host doesn't support https
+# then you should disable it
+force-https : true
+
+# Build settings
+sass:
+  sass_dir  : _sass
+  style     : compressed
+
+# Markdown settings
+
+markdown    : kramdown
+highlighter : rouge
+
+kramdown:
+  input                   : GFM
+  syntax_highlighter      : rouge
+  syntax_highlighter_opts:
+    css_class             : 'highlight'
+    #line_numbers : true # bad idea, spans don't need linenos and would inherit this option
+    span:
+      line_numbers        : false
+    block:
+      line_numbers        : true
+      start_line          : 1
+
+# Plugins
+gems:
+  - jekyll-feed
+  - jekyll-gist
+  - jemoji
+
+# mimic GitHub Pages with --safe
+whitelist:
+  - jekyll-feed
+  - jekyll-gist
+  - jemoji
+
+#==============================================================================#
+
+# Site Author
+author:
+  name             : "Philippe Baccara"
+  avatar           : "phil_baccara.jpg"
+  bio              : "Just another dev guy who love to play guitar and create awesome stuff"
+  location         : "Mulhouse | Lyon | <nobr>Sophia-Antipolis</nobr> / France"
+  email            : "baccara.philippe@gmail.com"
+  mobile           : "(+33)7.82.89.70.00"
+  url              : "https://philbaccara.github.io"
+  bitbucket        : "Tali3syn"
+  facebook         :
+  github           : "philbaccara"
+  google_plus      :
+  lastfm           :
+  linkedin         :
+  soundcloud       :
+  stackoverflow    :
+  steam            :
+  twitter          :
+  youtube          :
+
+
+#-----------#
+# HTML Head #
+#-----------#
+
+title           : "{ Philippe Baccara }"
+keywords        : baccara, philippe, phil, personnal, cv, ruby, rails, elixir, phoenix, elm, react, music, guitar, metal, rock
+favicon         : '/img/favicon.ico'
+
+
+#---------------#
+# Header layout #
+#---------------#
+
+my-jobs:
+  en            : "Full-Stack Developer | Musician"
+  fr            : "Développeur Web Full-Stack | Musicien"
+black-favicon   : '/img/terminal.png'
+
+# Dynamic Text on the Header
+dynamic-typing  : true
+shuffle         : true # Shuffle the lines.
+loop            : true
+loop-count      : false # Set False for infinite loop, or set any number for finite loop.
+type-speed      : 10
+start-delay     : 200
+delete-delay    : 5000
+lines: # You can add HTML Tags in the Text
+  - text        : Ruby and Rails enthusiast.
+  - text        : Elixir and Phoenix fan.
+  - text        : React+Redux and Elm handyman.
+  - text        : Music addict.
+
+me-img          : /img/portrait.png
+
+
+#----------------------------#
+# Color the browser elements #
+#----------------------------#
+
+color-browser         : #000000
+apple-status-bar-style: black
+
+
+#--------#
+# FOOTER #
+#--------#
+
+# Follow me
+social:
+  - title       : github
+    url         : https://github.com/philbaccara
+  - title       : bitbucket
+    url         : https://bitbucket.org/Tali3syn/
+  - title       : rss
+    url         : /feed.xml
+
+
+#------#
+# Blog #
+#------#
+
+words-per-minute          : 200
+
+enable-gesture-navigation : true
+post-preview-words        : 96
+
+
+share: ['email', 'facebook', 'twitter', 'linkedin', 'reddit', 'google-plus']
+
+# Sections shown in the index page
+
+pages_list:
+  about:
+    en: "About"
+    fr: "&Agrave; propos"
+  projects:
+    en: "Projects"
+    fr: "Projets"
+  contact:
+    en: "Contact"
+    fr: "Contact"
+  blog:
+    en: "Blog"
+    fr: "Blog"
+  cv:
+    en: "CV"
+    fr: "CV"
+
+
+#----------------------------#
+# Color the browser elements #
+#----------------------------#
+
+color-browser         : "#000000"
+apple-status-bar-style: "black"
+
+
+#--------------#
+# Web app mode #
+#--------------#
+
+web-app-mode: true
+
+# Icons for Web App mode
+
+icon-36p  : "/img/web-app/icon-36p.png"
+icon-48p  : "/img/web-app/icon-48p.png"
+icon-72p  : "/img/web-app/icon-72p.png"
+icon-96p  : "/img/web-app/icon-96p.png"
+icon-144p : "/img/web-app/icon-144p.png"
+icon-192p : "/img/web-app/icon-192p.png"

@@ -1,0 +1,21 @@
+<svg class="git-graph experience__git-graph" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 170 1016" preserveAspectRatio="none">
+  <defs>
+    <linearGradient id="gitGraphGradient">
+      <stop offset="0%" stop-color="#8acb82" />
+      <stop offset="100%" stop-color="#65b95a" />
+    </linearGradient>
+  </defs>
+  <g class="icons">
+    <image xlink:href="{{ site.baseurl }}/img/guitar.png" x="5" y="-5" height="36px" width="35px"/>
+    <image xlink:href="{{ site.baseurl }}/img/computer.png" x="40" y="-10" height="40px" width="40px"/>
+  </g>
+  <g class="paths">
+    <path class="dashed-path" d="M 20,40 L 20,1016" />
+    <path class="dashed-path" d="M 60,40 L 60,1016" />
+    <path class="career-path" d="M 60,1016 L 60,600 20,560 20,120 60,80 60,40" />
+  </g>
+  <g class="timeline">
+    <text class="timeline-title" x="90" y="55" transform="rotate(-30 60,40)">{{ site.data.cv.content.experiences.title[page.lang] }}</text>
+    <path class="timeline-path" d="M 120,31 L 120,1016 170,987 170,0" fill="url(#gitGraphGradient)" />
+  </g>
+</svg>

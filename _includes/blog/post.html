@@ -1,0 +1,43 @@
+<!-- Post Start -->
+
+<li class="post" data-tags="{{ post.tags | join: ','}}">
+  <time datetime="{{ post.date | date_to_xmlschema }}" class="post__date">
+    <div class="post__date--day">
+        {{ post.date | date: "%d" }}
+    </div>
+    <div class="post__date--month-year">
+      {% if page.lang == "fr" %}
+        {% include date.html date=post.date %}
+        {{ month | capitalize }} {{ year }}
+      {% else %}
+        {{ post.date | date: "%B %Y" }}
+      {% endif %}
+    </div>
+  </time>
+  <div class="post__body">
+    <a href="{{ site.baseurl }}{{ post.url }}" class="post__title animated" itemprop="headline">{{ post.title }}</a>
+    <div class="post__readtime">
+      <i class="fa fa-clock-o" aria-hidden="true"></i>
+      {% assign words = post.content | strip_html | number_of_words %}
+      {% if words < 180 %}
+        {{ site.data.post.content.readtime.lessthan[page.lang] }}
+      {% elsif words < 360 %}
+        {{ site.data.post.content.readtime.minute[page.lang] }}
+      {% else %}
+        {{ words | divided_by: site.words-per-minute }} {{ site.data.post.content.readtime.minutes[page.lang] }}
+      {% endif %}
+    </div>
+    <ul class="post__tags-list">
+      {% for tag in post.tags %}
+      <li class="tag post__tag" data-tag="{{ tag }}">
+        <a href="javascript:;">
+          {{ tag }}
+        </a>
+      </li>
+      {% endfor %}
+    </ul>
+    <i class="post__bg icon-{{ post.language }}"></i>
+  </div>
+</li>
+
+<!-- Post End -->

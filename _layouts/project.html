@@ -1,0 +1,74 @@
+---
+layout: default
+---
+
+{% include project/banner.html %}
+
+<div class="project">
+  <div class="container">
+    {% if page.stack.frontend or page.stack.backend %}
+      {% if page.stack.frontend %}
+        <div class="project-stack">
+          <div class="project-stack__side-title">
+            <h3>Front-End</h3>
+          </div>
+          <ul class="project-stack__languages">
+            {% for language in page.stack.frontend %}
+            <li class="project-stack__language">
+              <img src="{{ site.baseurl }}/img/languages/{{ language | replace: ' ', '' | downcase }}.png" alt="{{ language }}" />
+              <span class="tooltip tooltip--bottom">{{ language }}</span>
+            </li>
+            {% endfor %}
+          </ul>
+        </div>
+      {% endif %}
+        {% if page.stack.backend %}
+          <div class="project-stack">
+            <div class="project-stack__side-title">
+              <h3>Back-End</h3>
+            </div>
+            <ul class="project-stack__languages">
+              {% for language in page.stack.backend %}
+              <li class="project-stack__language">
+                <img src="{{ site.baseurl }}/img/languages/{{ language | replace: ' ', '' | downcase }}.png" alt="{{ language }}" />
+                <span class="tooltip tooltip--bottom">{{ language }}</span>
+              </li>
+              {% endfor %}
+            </ul>
+          </div>
+        {% endif %}
+    {% else %}
+      <div class="project-stack">
+        <div class="project-stack__side-title">
+          <h3>Stack</h3>
+        </div>
+        <ul class="project-stack__languages">
+          {% for language in page.stack %}
+          <li class="project-stack__language">
+            <img src="{{ site.baseurl }}/img/languages/{{ language | replace: ' ', '' | downcase }}.png" alt="{{ language }}" />
+            <span class="tooltip tooltip--bottom">{{ language }}</span>
+          </li>
+          {% endfor %}
+        </ul>
+      </div>
+    {% endif %}
+    <div class="project-desc markdown-content">
+      {{ content | markdownify }}
+    </div>
+    {% if page.gallery %}
+    <div class="project-gallery js-gallery" itemscope itemtype="http://schema.org/ImageGallery">
+      {% for image in page.gallery %}
+      <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+        <a href="{{ site.baseurl }}/img/projects/gallery/{{ image.file }}" itemprop="contentUrl" data-size="{{ image.size }}">
+          <img src="{{ site.baseurl }}/img/projects/gallery/{{ image.thumbnail }}" itemprop="thumbnail" alt="{{ image.alt }}" />
+        </a>
+        {% if image.caption %}
+        <figcaption itemprop="caption description">{{ image.caption }}</figcaption>
+        {% endif %}
+      </figure>
+      {% endfor %}
+    </div>
+    {% include gallery.html %}
+    {% endif %}
+  </div>
+</div>

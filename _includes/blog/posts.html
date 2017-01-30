@@ -1,0 +1,41 @@
+
+<!-- Blog posts Start -->
+
+<section id="{{ include.category }}Posts" class="posts-category__content {{ include.active }}">
+  {% assign tags = "" | split: "|" %}
+  {% assign posts = site.posts | where: "lang", page.lang | where: "category", include.category %}
+  {% if posts %}
+    {% for post in posts %}
+      {% for tag in post.tags %}
+        {% assign tags = tags | push: tag %}
+      {% endfor %}
+    {% endfor %}
+    {% assign tags = tags | uniq | sort %}
+    <ul class="tag-filters-list">
+      <li class="tag-filter tag-filter--all js-tag-filter active" data-tag="all">
+        <a href="javascript:;">
+          {{ site.data.blog.content.all[page.lang] }}
+        </a>
+      </li>
+      {% for tag in tags %}
+      <li class="tag-filter js-tag-filter" data-tag="{{ tag }}">
+        <a href="javascript:;">
+          {{ tag }}
+        </a>
+      </li>
+      {% endfor %}
+    </ul>
+    <hr>
+    <ul class="posts active">
+      {% for post in posts %}
+        {% include blog/post.html %}
+      {% endfor %}
+    </ul>
+  {% else %}
+    <ul class="posts active">
+      <li class="no-posts">{{ site.data.post.content.no-posts[page.lang] }}</li>
+    </ul>
+  {% endif %}
+</section>
+
+<!-- Blog posts End -->

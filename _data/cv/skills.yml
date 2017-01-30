@@ -1,0 +1,93 @@
+- title:
+    en: Languages
+    fr: Langages
+  type: meter
+  list:
+  - name: ruby
+    ratio: 90
+  - name: php
+    ratio: 70
+  - name: elixir
+    ratio: 50
+  - name: java
+    ratio: 30
+  - name: C#
+    ratio: 30
+  - name: Bash
+    ratio: 20
+  - name: SQL + PL/SQL
+    ratio: 75
+- title:
+    en: Front-End
+    fr: Front-End
+  type: meter
+  list:
+  - name: Html5
+    ratio: 95
+  - name: CSS3
+    ratio: 95
+  - name: Stylus
+    ratio: 95
+  - name: Sass
+    ratio: 95
+  - name: Javascript (ES6)
+    ratio: 90
+  - name: jQuery
+    ratio: 90
+  - name: Coffeescript
+    ratio: 90
+- title:
+    en: Frameworks
+    fr: Frameworks
+  type: meter
+  list:
+  - name: Ruby On Rails
+    ratio: 90
+  - name: Phoenix
+    ratio: 70
+  - name: Symfony
+    ratio: 40
+  - name: React + Redux
+    ratio: 80
+  - name: Elm
+    ratio: 45
+  - name: Semantic-UI
+    ratio: 90
+  - name: Bootstrap
+    ratio: 50
+  - name: Qt
+    ratio: 40
+- title:
+    en: SGBD
+    fr: SGBD
+  type: meter
+  list:
+  - name: PostgreSQL
+    ratio: 80
+  - name: MySQL (MariaDB)
+    ratio: 70
+  - name: GraphQL
+    ratio: 45
+  - name: Redis
+    ratio: 60
+  - name: ElasticSearch
+    ratio: 30
+- title:
+    en: Adobe
+    fr: Adobe
+  type: meter
+  list:
+  - name: Photoshop
+    ratio: 70
+  - name: Illustrator
+    ratio: 40
+  - name: InDesign
+    ratio: 50
+- title:
+    en: Others
+    fr: Autres
+  type: simple
+  list: "Git, Webpack, Brunch</br>
+        Jetbrains IntelliJ, Atom, SublimeText, Vim</br>
+        Trello, Gimp, Inkscape, Pencil</br>
+        Linux (Fedora, Linux Mint, Ubuntu), Windows"

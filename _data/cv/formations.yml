@@ -1,0 +1,44 @@
+- career: "music"
+  school: "Music Academy International"
+  diploma:
+    en: "Professionnal Musician"
+    fr: "Musicien Professionnel"
+  mention: Bien
+  city: Nancy
+  year: "2009"
+  spec:
+    en: "Guitar"
+    fr: "Guitare"
+- career: "development"
+  school: "Université Nice Sophia-Antipolis"
+  diploma:
+    en: "Licence Pro S.I.L."
+    fr: "Licence Pro S.I.L."
+  mention: Assez-bien
+  city: Sophia-Antipolis
+  year: "2007"
+  spec:
+    en: "Distributed Computing and Business Data Exchange"
+    fr: "Informatique Distribuée et Echange de Données en Entreprise"
+- career: "development"
+  school: "I.U.T. Paul Sabatier"
+  diploma:
+    en: "D.U.T. Computing"
+    fr: "D.U.T. Informatique"
+  mention: Assez-bien
+  city: Toulouse
+  year: "2006"
+  spec:
+    en: "Software engineering"
+    fr: "Génie Logiciel"
+- career: "development"
+  school: "Lycée Déodat de Séverac"
+  diploma:
+    en: "Baccalauréat Technologique"
+    fr: "Baccalauréat Technologique"
+  mention: Bien
+  city: Toulouse
+  year: "2003"
+  spec:
+    en: "Science and Technology of the Electronics Engineer"
+    fr: "Sciences et Techniques de l'Ingénieur en Electronique"

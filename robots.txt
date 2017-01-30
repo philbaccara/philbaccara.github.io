@@ -1,0 +1,10 @@
+User-agent: *
+Allow: /
+Disallow: /cv.html
+Disallow: /fr/cv.html
+Disallow: /about.html
+Disallow: /fr/about.html
+Disallow: /projects.html
+Disallow: /fr/projects.html
+Disallow: /terms_and_policies.html
+Disallow: /fr/terms_and_policies.html
