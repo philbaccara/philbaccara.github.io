@@ -9,7 +9,7 @@ img:
   thumbnail: 'jam_session-thumbnail.jpg'
   banner: 'jam_session-banner.jpg'
 about: "Un site Web pour proposer ou trouver une \"<a href=\"https://fr.wikipedia.org/wiki/Jam_session\" class=\"animated\" target=\"_blank\">Jam session</a>\" (autrement dit un boeuf) près de vous, jouer avec d'autres Musiciens et... s'éclater !"
-release: "Sortie prévue au 1<sup>er</sup> trimestre 2017"
+release: "Sortie prévue au 3<sup>ème</sup> trimestre 2017"
 stack:
   frontend: [HTML5, CSS3, Sass, javascript, React, Redux, Apollo]
   backend: ['Ruby On Rails', Ruby, PostgreSQL, GraphQL, Redis]

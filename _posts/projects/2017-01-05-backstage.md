@@ -15,10 +15,10 @@ about: '<span class="secret">secretsecretsecret</span>
      <span class="secret">secretsecretsecretsecretsecretsecret</span>
      will find everything they need
      <span class="secret">secretsecretsecretsecret</span>'
-release: "Coming for Q2 of 2017"
+release: "Coming for Q3 of 2017"
 stack:
-  frontend: [HTML5, CSS3, Stylus, javascript, Elm]
-  backend: [Elixir, Phoenix, PostgreSQL, Redis]
+  frontend: [HTML5, CSS3, Stylus, javascript, React, Redux, Apollo]
+  backend: [Elixir, Phoenix, PostgreSQL]
 ---
 # Presentation
 

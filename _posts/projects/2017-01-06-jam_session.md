@@ -9,7 +9,7 @@ img:
   thumbnail: 'jam_session-thumbnail.jpg'
   banner: 'jam_session-banner.jpg'
 about: "A website to find a \"<a href=\"https://en.wikipedia.org/wiki/Jam_session\" class=\"animated\" target=\"_blank\">Jam session</a>\", play with others Musicians and... have fun !"
-release: "Coming for Q1 of 2017"
+release: "Coming for Q3 of 2017"
 stack:
   frontend: [HTML5, CSS3, Sass, javascript, React, Redux, Apollo]
   backend: ['Ruby On Rails', Ruby, PostgreSQL, GraphQL, Redis]

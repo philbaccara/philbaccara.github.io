@@ -5,14 +5,14 @@
   list:
   - name: ruby
     ratio: 90
-  - name: php
-    ratio: 70
   - name: elixir
+    ratio: 60
+  - name: php
     ratio: 50
   - name: java
     ratio: 30
   - name: C#
-    ratio: 30
+    ratio: 20
   - name: Bash
     ratio: 20
   - name: SQL + PL/SQL
@@ -32,31 +32,31 @@
     ratio: 95
   - name: Javascript (ES6)
     ratio: 90
-  - name: jQuery
-    ratio: 90
   - name: Coffeescript
-    ratio: 90
+    ratio: 80
 - title:
     en: Frameworks
     fr: Frameworks
   type: meter
   list:
   - name: Ruby On Rails
-    ratio: 90
+    ratio: 85
   - name: Phoenix
-    ratio: 70
+    ratio: 60
   - name: Symfony
-    ratio: 40
-  - name: React + Redux
+    ratio: 25
+  - name: jQuery
     ratio: 80
+  - name: React + Redux
+    ratio: 70
   - name: Elm
-    ratio: 45
+    ratio: 30
   - name: Semantic-UI
-    ratio: 90
+    ratio: 80
   - name: Bootstrap
     ratio: 50
   - name: Qt
-    ratio: 40
+    ratio: 35
 - title:
     en: SGBD
     fr: SGBD
@@ -69,7 +69,7 @@
   - name: GraphQL
     ratio: 45
   - name: Redis
-    ratio: 60
+    ratio: 50
   - name: ElasticSearch
     ratio: 30
 - title:
@@ -82,7 +82,7 @@
   - name: Illustrator
     ratio: 40
   - name: InDesign
-    ratio: 50
+    ratio: 60
 - title:
     en: Others
     fr: Autres

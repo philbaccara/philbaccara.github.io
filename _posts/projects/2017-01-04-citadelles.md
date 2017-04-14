@@ -9,8 +9,10 @@ img:
   thumbnail: 'citadelles-thumbnail.jpg'
   banner: 'citadelles-banner.jpg'
 about: "A fanmade for smartphone of the great card game from Bruno Faidutti."
-release: "Coming for Q2 of 2017"
-stack: ["React Native"]
+release: "Coming for Q4 of 2017"
+stack:
+  frontend: ["React Native"]
+  backend: [Elixir, Phoenix, PostgreSQL]
 gallery:
   - file: "citadelles_1.jpg"
     thumbnail: "citadelles_1-thumbnail.jpg"
