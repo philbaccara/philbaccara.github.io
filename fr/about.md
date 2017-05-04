@@ -15,5 +15,5 @@ Pendant ma carrière en tant que musicien, j'ai continué de développer, ou de 
 **Mais maintenant, il est temps pour moi d'écrire mon prochain chapitre...**
 
 <p class="notice--important">
-  Je suis actuellement à la recherche d'un emploi à plein temps en tant que <strong>Développeur Web Full-Stack</strong>. Si vous avez besoin de quelqu'un de créatif et très motivé :<br>- <a href="mailto:{{ site.author.email }}" class="animated">contactez moi</a> -
+  Je viens de trouver un emploi à Hespul en tant que <strong>Développeur Web Full-Stack</strong>.
 </p>
