@@ -1,5 +1,5 @@
 $(document).ready( function() {
-
+  console.log(window.location.host);
   // FitVids init
   // $("#main").fitVids();
 

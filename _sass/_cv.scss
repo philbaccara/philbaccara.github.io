@@ -356,6 +356,13 @@
                   box-shadow 200ms linear,
                   z-index 100ms step-end,
                   -webkit-transform 200ms linear;
+      .experience__body,
+      .formation__body {
+        a {
+          color: #555;
+          font-weight: bold;
+        }
+      }
     }
     &:nth-child(odd) {
       .experience__head,

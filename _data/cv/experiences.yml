@@ -1,16 +1,23 @@
 - career: "development"
+  society: "G.E.D.E.R.R.A. [ <i>Hespul, &Eacute;pices-énergie</i> ]"
+  country:
+    en: France
+    fr: France
+  city: Lyon
+  year: 2017
+  desc:
+    en: "Continued development of the <a href=\"http://www.epices-energie.fr\" class=\"animated\" target=\"_blank\">Épices V2 platform</a> *[RoR 4.2.1, Html5, CSS3, javascript PostgreSQL]* dedicated to the monitoring and exploitation of renewable energy production chains."
+    fr: "Poursuite du développement de la <a href=\"http://www.epices-energie.fr\" class=\"animated\" target=\"_blank\">plateforme Épices V2</a> *[RoR 4.2.1, Html5, CSS3, javascript, PostgreSQL]* dédiée au suivi et à l’exploitation des filières de production d’énergies renouvelables."
+- career: "development"
   society: "RondCarré.net"
   country:
     en: France
     fr: France
   city: Valbonne
   year: 2016
-  dates:
-    en: "September 2016"
-    fr: "Septembre 2016"
   desc:
-    en: "Development *[php 5.6, Html5, CSS3, javascript, PostgreSQL]* and deployment of a «launchpage» for independent graphic designers."
-    fr: "Développement *[php 5.6, Html5, CSS3, javascript, PostgreSQL]* et déploiement d’une «launchpage» pour des graphistes indépendantes."
+    en: "Development *[php 5.6, Html5, CSS3, javascript, PostgreSQL]* and deployment of a «<a href=\"http://rondcarre.net/\" class=\"animated\" target=\"_blank\">launchpage</a>» for independent graphic designers."
+    fr: "Développement *[php 5.6, Html5, CSS3, javascript, PostgreSQL]* et déploiement d’une «<a href=\"http://rondcarre.net/\" class=\"animated\" target=\"_blank\">launchpage</a>» pour des graphistes indépendantes."
 - career: "development"
   society: "T.M.C."
   country:
@@ -18,9 +25,6 @@
     fr: Cameroun
   city: Douala
   year: 2014
-  dates:
-    en: "May 2014 - August 2014"
-    fr: "Mai 2014 - Août 2014"
   desc:
     en: "Analysis, conception *[UML 2.0]* and development *[RoR 4.1, Html5, CSS3, Coffeescript, PostgreSQL]* mission of <u>a showcase website and a prospect tool</u> for an industrial sales industry."
     fr: "Mission d’analyse, conception *[UML 2.0]* et développement *[RoR 4.1, Html5, CSS3, Coffeescript, PostgreSQL]* d’un <u>site vitrine et d'un outil de prospect</u> pour une entreprise de vente industrielle."
@@ -31,9 +35,6 @@
     fr: France
   city: Nancy
   year: 2011
-  dates:
-    en: "February 2011 - April 2011"
-    fr: "Février 2011 - Avril 2011"
   desc:
     en: "Analysis, conception *[UML 2.0]* and development *[php 5.3.8, Html4, CSS2, PostGreSQL]* of <u>a showcase website</u> for EeRY band."
     fr: "Mission d’analyse, conception *[UML 2.0]* et développement *[php 5.3.8, Html4, CSS2, PostGreSQL]* du <u>site vitrine</u> de la formation musicale EeRY."
@@ -44,9 +45,6 @@
     fr: France
   city: Saint-Bernard
   year: 2010
-  dates:
-    en: "September 2010 - October 2010"
-    fr: "Septembre 2010 - Octobre 2010"
   desc:
     en: "Analysis and conception of <u>an e-commerce website</u> *[CMS Prestashop]* for an Italian food import company."
     fr: "Mission d’analyse et conception d’un <u>site e-commerce</u> *[CMS Prestashop]* pour une société d’import de produits alimentaires italiens."
@@ -57,9 +55,6 @@
     fr: France
   city: Nancy
   year: 2009
-  dates:
-    en: "Mars 2009 - May 2009"
-    fr: "Mars 2009 - Mai 2009"
   desc:
     en: "Analysis, conception *[UML 2.0]* and developement *[Html4, Flash, AS3]* of <u>a showcase website</u> for the Watson orchestra."
     fr: "Mission d’analyse, conception *[UML 2.0]* et développement *[Html4, Flash, AS3]* du <u>site vitrine</u> de l’orchestre Watson."
@@ -70,9 +65,6 @@
     fr: France
   city: Sophia-Antipolis
   year: 2007
-  dates:
-    en: "May 2007 - September 2007"
-    fr: "Mai 2007 - Septembre 2007"
   desc:
     en: "Internship as analyst developer. Analysis of the <u>integration of an LDAP directory</u> within the collaborative work applications of the CSTB's national park and <u>writing specifications</u>. <u>Internal conference</u> to all IT department managers. <u>Critical interventions and maintenance</u> on various internal and external websites: analysis, design *[UML 2.0]* and development *[Php 5, CSS2, javascript, asp, VBScript, SQLServer]*."
     fr: "Stage d’analyste programmeur. Analyse de l’<u>intégration d’un annuaire LDAP</u> au sein des applications de travail collaboratif de l’ensemble national des parcs du CSTB et <u>rédaction d’un cahier des charges</u>. <u>Conférence interne</u> à l’ensemble des responsables du département informatique. <u>Interventions critiques et maintenance</u> sur divers sites internes et externes : analyse, conception *[UML 2.0]* et programmation *[Php 5, CSS2, javascript, asp, VBScript, SQLServer]*."
@@ -83,7 +75,6 @@
     fr: France
   city: Toulouse
   year: 2006
-  dates: "May 2006 - August 2006"
   desc:
     en: "Internship in a software company as a Web developer. Resumption of modelling *[UML 2.0]* and development *[php 4.2 & 5.1, Html 4.0, MySQL, CSS2, javascript, asp, VBscript]* of an internal management tool sold to all partners after good results to internal production tests."
     fr: "Stage de développeur Web dans une SSII. Reprise de la conception *[UML 2.0]* et de la programmation *[php 4.2 & 5.1, Html 4.0, MySQL, CSS2, javascript, asp, VBscript]* d’un <u>outil interne de gestion</u> vendu à l’ensemble des partenaires suite au bon déroulement des tests en production interne."

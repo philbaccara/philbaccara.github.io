@@ -39,6 +39,24 @@
       }
     }
   }
+  .notice--hespul {
+    margin: 0 10px;
+    padding: 30px;
+    opacity: .8;
+    color: white;
+    background: rgba(254, 199, 57, .9) url('/img/birds-bg.png') center center no-repeat;
+    text-shadow: 0 0 1px rgba(0, 0, 0, .3);
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, .2);
+    background-size: contain;
+    a {
+      color: #01618b;
+      text-shadow: 0 0 1px rgba(0, 0, 0, .3);
+      &:hover:after,
+      &:focus:after {
+        background-color: #01618b;
+      }
+    }
+  }
 }
 
 @media (min-width: $medium) {

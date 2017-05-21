@@ -157,7 +157,7 @@ a {
       color: lighten($primary-color, 20%);
     }
   }
-  &.theme{
+  &.theme, &.green {
     color: $theme-color;
     &.animated:after {
       background-color: $theme-color;
