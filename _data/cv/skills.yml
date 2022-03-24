@@ -4,19 +4,21 @@
   type: meter
   list:
   - name: ruby
-    ratio: 90
-  - name: elixir
+    ratio: 95
+  - name: python
     ratio: 60
+  - name: elixir
+    ratio: 50
   - name: php
     ratio: 50
   - name: java
     ratio: 30
   - name: C#
     ratio: 20
-  - name: Bash
+  - name: Shell
     ratio: 20
   - name: SQL + PL/SQL
-    ratio: 75
+    ratio: 80
 - title:
     en: Front-End
     fr: Front-End
@@ -32,29 +34,25 @@
     ratio: 95
   - name: Javascript (ES6)
     ratio: 90
-  - name: Coffeescript
-    ratio: 80
 - title:
     en: Frameworks
     fr: Frameworks
   type: meter
   list:
   - name: Ruby On Rails
-    ratio: 85
-  - name: Phoenix
+    ratio: 90
+  - name: Django
     ratio: 60
+  - name: Phoenix
+    ratio: 50
   - name: Symfony
     ratio: 25
-  - name: jQuery
+  - name: Vue
     ratio: 80
-  - name: React + Redux
+  - name: React
     ratio: 70
   - name: Elm
     ratio: 30
-  - name: Semantic-UI
-    ratio: 80
-  - name: Bootstrap
-    ratio: 50
   - name: Qt
     ratio: 35
 - title:
@@ -63,15 +61,26 @@
   type: meter
   list:
   - name: PostgreSQL
-    ratio: 80
+    ratio: 90
+  - name: Redis
+    ratio: 60
   - name: MySQL (MariaDB)
-    ratio: 70
+    ratio: 50
   - name: GraphQL
     ratio: 45
-  - name: Redis
-    ratio: 50
   - name: ElasticSearch
     ratio: 30
+- title:
+    en: DevOps
+    fr: DevOps
+  type: meter
+  list:
+  - name: Ansible
+    ratio: 70
+  - name: Jenkins
+    ratio: 50
+  - name: RabbitMQ
+    ratio: 40
 - title:
     en: Adobe
     fr: Adobe
@@ -87,7 +96,10 @@
     en: Others
     fr: Autres
   type: simple
-  list: "Git, Webpack, Brunch</br>
-        Jetbrains IntelliJ, Atom, SublimeText, Vim</br>
-        Trello, Gimp, Inkscape, Pencil</br>
-        Linux (Fedora, Linux Mint, Ubuntu), Windows"
+  list:
+    - Git, Webpack, Brunch, Jasper
+    - VSCode, Vim, tmux
+    - Atlassian, Gimp, Inkscape, Pencil
+    - Linux (Debian, RedHat), Windows
+    - en: AdminSys libs & tools
+      fr: AdminSys libs & outils

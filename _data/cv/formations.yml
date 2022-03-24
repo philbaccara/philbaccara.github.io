@@ -1,3 +1,13 @@
+- career: "development"
+  school: "M2i"
+  diploma:
+    en: "ENI Certification"
+    fr: "Certification ENI"
+  city: Lyon
+  year: "2021"
+  spec:
+    en: "PostgreSQL Administration"
+    fr: "PostgreSQL Administration"
 - career: "music"
   school: "Music Academy International"
   diploma:

@@ -3,8 +3,8 @@ download:
   fr: "Télécharger mon CV"
 global:
   private:
-    en: "32 years old - single - without children"
-    fr: "32 ans - célibataire - sans enfants"
+    en: "37 years old - single - without children"
+    fr: "37 ans - célibataire - sans enfants"
   driving:
     en: "Driver's license B (personal vehicle)"
     fr: "Permis B (véhicule personnel)"
@@ -37,12 +37,12 @@ languages:
       others:
         en: '<span class="stars"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-half-o"></i> Read |</span>
             <span class="stars"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-half-o"></i><i class="fa fa-star-o"></i> Understanded |</span>
-            <span class="stars"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-half-o"></i><i class="fa fa-star-o"></i> Written |</span>
-            <span class="stars"><i class="fa fa-star"></i><i class="fa fa-star-half-o"></i><i class="fa fa-star-o"></i><i class="fa fa-star-o"></i> Spoken</span>'
+            <span class="stars"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-half-o"></i> Written |</span>
+            <span class="stars"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-o"></i><i class="fa fa-star-o"></i> Spoken</span>'
         fr: '<span class="stars"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-half-o"></i> Lu |</span>
             <span class="stars"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-half-o"></i><i class="fa fa-star-o"></i> Compris |</span>
-            <span class="stars"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-half-o"></i><i class="fa fa-star-o"></i> &Eacute;cris |</span>
-            <span class="stars"><i class="fa fa-star"></i><i class="fa fa-star-half-o"></i><i class="fa fa-star-o"></i><i class="fa fa-star-o"></i> Parlé</span>'
+            <span class="stars"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-half-o"></i> &Eacute;cris |</span>
+            <span class="stars"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-o"></i><i class="fa fa-star-o"></i> Parlé</span>'
 experiences:
   title:
     en: "Experiences"

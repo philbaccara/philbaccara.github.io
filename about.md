@@ -11,6 +11,6 @@ I learned the web development at university with <a href="https://www.javascript
 
 During my musical career, I continued to develop some websites and applications as a freelance/hobbyist programmer and finally compile my both passions in one BIG project during the last year using <a href="http://elixir-lang.org/" class="bold violet animated" target="\_blank">Elixir</a> and its blazingly fast framework <a href="http://www.phoenixframework.org/" class="bold orange animated" target="\_blank">Phoenix</a> coupled to <a href="http://elm-lang.org/" class="bold cyan animated" target="\_blank">Elm</a> which allowed me to initiate myself to the <i>functionnal programming</i>.
 
-<p class="notice--hespul">
-  I'm currently working for the employer group <span style="font-weight: bold; color: #01618b;">G.E.D.E.R.R.A.</span> and more particularly for the association <a href="http://www.hespul.org/" class="bold green animated" target="\_blank">HESPUL</a> as a <strong>Full-Stack Developer</strong>.
+<p class="notice--epices">
+  I'm currently working for the employer group called <span style="font-weight: bold; color">G.E.D.E.R.R.A.</span> and more particularly for the S.A.S. <a href="https://www.epices-energie.fr" class="bold animated" target="_blank">Épices-énergie</a> and the association <a href="http://www.hespul.org/" class="bold animated" target="\_blank">HESPUL</a> as a <strong>Full-Stack Lead Developer</strong>.
 </p>

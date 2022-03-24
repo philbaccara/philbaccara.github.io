@@ -18,11 +18,15 @@
       {% endfor %}
       </ul>
     {% else %}
-      <div class="skills-list">
+      <ul class="skills-list">
       {% for skill in category.list %}
-        {{ skill }}
+      {% if skill[page.lang] %}
+      <li>{{ skill[page.lang] }}</li>
+      {% else %}
+      <li>{{ skill }}</li>
+      {% endif %}
       {% endfor %}
-      </div>
+      </ul>
     {% endif %}
   </div>
 {% endfor %}

@@ -9,7 +9,7 @@
   <ul class="formations">
     {% for formation in site.data.cv.formations %}
       <li class="formation {{ formation.career }}">
-        <div class="experience__year">{{ formation.year }}</div>
+        <div class="formation__year">{{ formation.year }}</div>
         <div class="content">
           <div class="formation__head">
             {{ formation.diploma[page.lang] }}

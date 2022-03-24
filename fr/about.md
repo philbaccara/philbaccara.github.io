@@ -12,6 +12,6 @@ J'ai appris le développement Web à l'université avec les langages <a href="ht
 
 Pendant ma carrière en tant que musicien, j'ai continué de développer, ou de faire évoluer, quelques sites webs et applications comme freelance ou comme développeur bénévole. Durant la dernière année, j'ai finalement compilé mes deux passions en un GRAND projet me permettant d'apprendre le langage <a href="http://elixir-lang.org/" class="bold violet animated" target="\_blank">Elixir</a> et son framework Web extrêment performant nommé <a href="http://www.phoenixframework.org/" class="bold orange animated" target="\_blank">Phoenix</a> qui, couplé à <a href="http://elm-lang.org/" class="bold cyan animated" target="\_blank">Elm</a>, m'ont permis de m'initier à la <i>programmation fonctionnelle</i>.
 
-<p class="notice--hespul">
-  Je travail actuellement pour le groupement d'employeurs <span style="font-weight: bold; color: #01618b;">G.E.D.E.R.R.A.</span> et plus particulièrement pour l'association <a href="http://www.hespul.org/" class="bold green animated" target="\_blank">HESPUL</a> en tant que <strong>Développeur Web Full-Stack</strong>.
+<p class="notice--epices">
+  Je travail actuellement pour le groupement d'employeurs <span style="font-weight: bold;">G.E.D.E.R.R.A.</span> et plus particulièrement pour la S.A.S. <a href="https://www.epices-energie.fr" class="bold animated" target="_blank">Épices-énergie</a> et l'association <a href="http://www.hespul.org/" class="bold animated" target="\_blank">HESPUL</a> en tant que <strong>Lead Développeur Web Full-Stack</strong>.
 </p>

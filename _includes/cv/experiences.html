@@ -9,7 +9,10 @@
   <ul class="experiences">
     {% for experience in site.data.cv.experiences %}
       <li class="experience {{ experience.career }}">
-        <div class="experience__year">{{ experience.year }}</div>
+        <div class="experience__year end">{{ experience.year.end }}</div>
+        {% if experience.year.begin %}
+        <div class="experience__year begin">{{ experience.year.begin }}</div>
+        {% endif %}
         <div class="content">
           <div class="experience__head">
             {{ experience.society }}

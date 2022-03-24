@@ -42,12 +42,12 @@ $(document).ready( function() {
     if (name=="experience") {
       paths.children[0].setAttribute('d', 'M 20,40 L 20,'+graphHeight);
       paths.children[1].setAttribute('d', 'M 60,40 L 60,'+graphHeight);
-      paths.children[2].setAttribute('d', 'M 60,'+graphHeight+' L 60,600 20,560 20,120 60,80 60,40');
+      paths.children[2].setAttribute('d', 'M 60,'+graphHeight+' L 60,400 20,360 20,240 60,200 60,40');
       timelinePath.setAttribute('d', 'M 120,31 L 120,'+graphHeight+' 170,'+(graphHeight-29)+' 170,0');
     } else if (name=="formation") {
       paths.children[0].setAttribute('d', 'M 20,40 L 20,'+graphHeight);
       paths.children[1].setAttribute('d', 'M 60,40 L 60,'+graphHeight);
-      paths.children[2].setAttribute('d', 'M 60,'+graphHeight+' L 60,110 20,70 20,40');
+      paths.children[2].setAttribute('d', 'M 60,'+graphHeight+' L 60,204 20,164 20,110 60,70 60,30');
       timelinePath.setAttribute('d', 'M 120,29 L 120,'+graphHeight+' 170,'+(graphHeight-29)+' 170,0');
     }
   }

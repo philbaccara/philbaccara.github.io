@@ -380,7 +380,8 @@
     }
   }
 
-  .experience__year {
+  .experience__year,
+  .formation__year {
     position: absolute;
     top: 60px;
     left: -92px;
@@ -391,7 +392,6 @@
     &:before {
       content: '';
       position: absolute;
-      top: 8px;
       right: -70px;
       width: 60px;
       border-top: 2px solid white;
@@ -409,6 +409,28 @@
               transform: scaleX(0);
       -webkit-transition: all 0.3s ease-in-out 0s;
               transition: all 0.3s ease-in-out 0s;
+    }
+    &.end {
+      &:before {
+        top: 8px;
+      }
+    }
+    &.begin {
+      bottom: -20px;
+      left: -90px;
+      display: flex;
+      justify-content: center;
+      align-items: flex-end;
+      transform-origin: bottom right;
+      &:before {
+        bottom: 8px;
+        border-top-style: dotted;
+      }
+    }
+  }
+  .formation__year {
+    &:before {
+      top: 8px;
     }
   }
 

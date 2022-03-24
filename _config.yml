@@ -63,7 +63,7 @@ author:
   name             : "Philippe Baccara"
   avatar           : "phil_baccara.jpg"
   bio              : "Just another dev guy who love to play guitar and create awesome stuff"
-  location         : "Mulhouse | Lyon | <nobr>Sophia-Antipolis</nobr> / France"
+  location         : "Lyon / France"
   email            : "baccara.philippe@gmail.com"
   mobile           : "(+33)7.82.89.70.00"
   url              : "https://philbaccara.github.io"
@@ -85,7 +85,7 @@ author:
 #-----------#
 
 title           : "{ Philippe Baccara }"
-keywords        : baccara, philippe, phil, personnal, cv, ruby, rails, elixir, phoenix, elm, react, music, guitar, metal, rock
+keywords        : baccara, philippe, phil, personnal, cv, ruby, rails, python, django, elixir, phoenix, elm, react, vue, ansible, music, guitar, metal, rock
 favicon         : '/img/favicon.ico'
 
 
@@ -109,7 +109,7 @@ delete-delay    : 5000
 lines: # You can add HTML Tags in the Text
   - text        : Ruby and Rails enthusiast.
   - text        : Elixir and Phoenix fan.
-  - text        : React+Redux and Elm handyman.
+  - text        : React and Vue handyman.
   - text        : Music addict.
 
 me-img          : /img/portrait.png
